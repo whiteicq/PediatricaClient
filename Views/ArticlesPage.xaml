@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="PediatricaUI.Views.ArticlePage"
+             Title="ArticlePage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="ExpanderHeaderStyle" TargetType="Label">
+                <Setter Property="MinimumHeightRequest" Value="51"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="BackgroundColor" Value="#D9D9D9"/>
+                <Setter Property="TextColor" Value="#8F8282"/>
+                <Setter Property="TextColor" Value="#8F8282"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+            </Style>
+            <Style x:Key="ExpanderContentStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="18"/>
+                <Setter Property="MinimumHeightRequest" Value="60"/>
+                <Setter Property="Padding" Value="30,16,0,16"/>
+                <Setter Property="Background" Value="#ffffff"/>
+                <Setter Property="TextColor" Value="#8F8282"/>
+                <Setter Property="LineBreakMode" Value="WordWrap"/>
+
+            </Style>
+            <Color x:Key="BorderColorExpanderHeader">Black</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <!--TODO: Добавить стрелку-->
+    <ScrollView>
+        <VerticalStackLayout>
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Симтомы у детей грудного и младшего возраста
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <!--Для норм отображения, можно задать лимит на кол-во символов, после которого нужно переключать LineBreakMode-->
+                <!--Или же нужно задать максимальную высоту чтобы не скакали размеры?-->
+                <!--п.с. это походу лучше через тригеры делать или хз-->
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Обзор психических расстройств у детей и подростков
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Обзор тревожных расстройств у детей и подростков
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Генерализованное тревожное расстройство у детей и подростков
+                        </Label> 
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Тревожное расстройство, вызванное разлукой
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Социофобия у детей и подростков
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Обсессивно-компульсивное расстройство (ОКР) и связанные с ним расстройства у детей и подростков
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Соматические и ассоциированные с ними расстройства у детей
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Паническое расстройство у детей и подростков
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Агорафобия у детей и подростков
+                        </Label>
+                    </Border>
+                    
+                </VerticalStackLayout>
+            </toolkit:Expander>
+        
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Медицинское наблюдение за здоровым ребенком
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Медицинское наблюдение за здоровым ребенком
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Скрининговые тесты для младенцев, детей и подростков
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Приучение к туалету
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    
+                </VerticalStackLayout>
+                
+            </toolkit:Expander>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

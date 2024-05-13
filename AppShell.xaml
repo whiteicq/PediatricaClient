@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="PediatricaUI.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:PediatricaUI"
+    xmlns:views="clr-namespace:PediatricaUI.Views"
+    Shell.FlyoutBehavior="Flyout"
+    Title="PediatricaUI">
+
+    <ShellContent Title="Articles"
+              ContentTemplate="{DataTemplate views:ArticlePage}"/>
+
+</Shell>

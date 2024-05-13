@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PediatricaUI.Views.SingleArticle"
+             Title="SingleArticle">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <!--Назвние статьи-->
+            <Label FontAttributes="Bold" FontSize="32">
+                Название статьи
+            </Label>
+            <!--Содержимое статьи-->
+            <Label FontSize="20">
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim neque, accumsan vitae nibh id, scelerisque gravida nulla. Suspendisse quis magna nulla. Nullam imperdiet erat vel eros imperdiet, ac lobortis dui semper. Nullam ut egestas lorem, vitae viverra nisi. Quisque a quam ultricies, viverra risus vel, lacinia lacus. Donec ac lacus vel odio mollis faucibus. Praesent blandit tempor massa non hendrerit. Nullam eget aliquam tellus, eu vulputate lorem. Vivamus quis nisl consectetur, tincidunt augue sed, luctus velit.
+
+Curabitur ac felis eget ex suscipit laoreet iaculis non orci. Nam aliquam, justo ut finibus mollis, sem lacus laoreet risus, ultricies accumsan sapien dui a sem. Etiam posuere malesuada sapien dignissim blandit. Fusce malesuada nisi ac lacinia condimentum. Vestibulum pretium felis in enim ornare luctus vel in leo. Nunc a metus nec nisl cursus gravida. Curabitur sed sem dolor.
+
+Donec cursus ipsum vel metus efficitur iaculis. Pellentesque eget quam euismod, molestie elit id, tristique elit. Cras congue neque non porttitor fringilla. Duis aliquam metus nisi, accumsan egestas ex interdum nec. Nam ipsum dolor, elementum in interdum id, ornare lobortis tortor. Nulla consectetur, justo ac blandit gravida, libero urna interdum mauris, non cursus risus metus id orci. Donec ac orci finibus, euismod est at, dignissim felis. Quisque blandit, urna eu convallis tempus, tellus ante lobortis metus, eu molestie lacus enim id erat. Aenean congue aliquet metus, id feugiat turpis vehicula sed. Curabitur lobortis quam ante. Vestibulum eu diam felis. Sed vel nulla hendrerit, luctus urna in, pretium nisl. Morbi pharetra felis ac semper mollis.
+
+Nulla tempus, quam ac imperdiet maximus, erat dui viverra mauris, vitae porta lorem arcu ut est. Integer ullamcorper lectus at efficitur congue. Aliquam sed ex velit. Aenean eget dui ullamcorper, tristique urna vitae, viverra sapien. Nulla quam justo, eleifend sed odio maximus, fringilla pretium massa. Praesent tempus nisl et nunc interdum gravida. Proin ornare finibus risus, ac laoreet lectus vehicula fringilla. Sed aliquet mauris velit, a molestie turpis consequat varius. Aenean eget leo sem. Suspendisse blandit at velit quis bibendum. Sed congue urna ligula, ut luctus felis dictum eu. Etiam convallis aliquam est. Integer id placerat enim. Nulla mauris ex, accumsan fermentum lacus ac, faucibus pharetra est. In porttitor arcu ut sapien mollis malesuada. Proin in nisi sed sapien convallis tristique eu vel nulla.
+
+Quisque justo quam, varius eget felis ut, imperdiet ultricies sapien. Fusce elementum felis nec nibh tristique, vitae luctus purus commodo. Duis pharetra mauris ac odio mollis, a consequat mauris lobortis. Quisque tellus nunc, cursus eu est quis, pellentesque aliquam tortor. In viverra mi vel eleifend luctus. Nunc cursus, ligula ac mollis posuere, nibh tortor vehicula lacus, ut tempus odio dolor eu leo. Ut porttitor tortor et imperdiet elementum. Maecenas nec dolor lacinia orci mollis porta. Nulla facilisi. Vivamus varius felis magna, in tempus turpis vulputate ut. Maecenas molestie enim et libero volutpat, at eleifend lorem tincidunt. Morbi ut augue pellentesque, iaculis dui ut, venenatis orci. Nunc dui urna, placerat at viverra eu, facilisis ut dui. Maecenas lacinia mauris nisl, ut ultricies nulla imperdiet et.
+            </Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PediatricaUI.MainPage">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="buttonStyle" TargetType="Button">
+                <Setter Property="HeightRequest" Value="135"/>
+                <Setter Property="WidthRequest" Value="135"/>
+                <Setter Property="BackgroundColor" Value="#1D03BE"/>
+                <Setter Property="CornerRadius" Value="15"/>
+                <Setter Property="Margin" Value="25,0,25,40"/> <!--???-->
+                <Setter Property="FontFamily" Value="InterVariable"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="12"/>
+            </Style>
+
+            <Style TargetType="Grid">
+                <Setter Property="Padding" Value="10,0,10,100"/> <!--???-->
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <!--FlexLayout?-->
+        <!--community toolkit-->
+        <!--Navigation?-->
+        <Button Grid.Row="0" Grid.Column="0" Style="{StaticResource buttonStyle}" Text="Статьи" Clicked="ToArticlePage" />
+        <Button Grid.Row="0" Grid.Column="1" Style="{StaticResource buttonStyle}" Text="Новости" />
+        <Button Grid.Row="1" Grid.Column="0" Style="{StaticResource buttonStyle}" Text="Видео" />
+        <Button Grid.Row="1" Grid.Column="1" Style="{StaticResource buttonStyle}" Text="Изображения" Clicked="ToImagesPage"/>
+        <Button Grid.Row="2" Grid.Column="0" Style="{StaticResource buttonStyle}" Text="Калькуляторы" />
+        <Button Grid.Row="2" Grid.Column="1" Style="{StaticResource buttonStyle}" Text="Избранное" />
+    </Grid>
+</ContentPage>
