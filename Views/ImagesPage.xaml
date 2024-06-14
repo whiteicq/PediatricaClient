@@ -5,11 +5,30 @@
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              Title="ImagesPage">
 
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="LinkToSingleImageStyle" TargetType="Label">
+                <Setter Property="MinimumHeightRequest" Value="51"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="BackgroundColor" Value="#ffffff"/>
+                <Setter Property="TextColor" Value="#8F8282"/>
+                <Setter Property="TextColor" Value="#8F8282"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ScrollView>
         <VerticalStackLayout>
-            <toolkit:Expander>
-                
-            </toolkit:Expander>
+            <Border>
+                <Label Style="{StaticResource LinkToSingleImageStyle}">
+                    Кохлеарный имплантат (у детей)
+
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

@@ -11,12 +11,12 @@ namespace PediatricaUI
 
         private async void ToArticlePage(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ArticlePage());
+            await Navigation.PushAsync(new ArticlesPage());
         }
 
         private async void ToImagesPage(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new )
+            await Navigation.PushAsync(new ImagesPage());
         }
     }
 

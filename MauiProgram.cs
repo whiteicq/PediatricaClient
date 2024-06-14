@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using CommunityToolkit.Maui;
 
@@ -12,14 +13,16 @@ namespace PediatricaUI
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                
                 .UseMauiCommunityToolkit()
+
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                     /*fonts.AddFont("Inter-Variable.ttf", "InterVariable");*/
                 });
-
+            
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif

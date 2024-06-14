@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PediatricaUI.Views.SingleImage"
+             Title="SingleImage">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image Source="photo.png"/>
+            <Label>
+                Имплантант состоит из звукового процессора, который крепится позади уха, 
+                и предает звуковые сигналы в передатчик (круговой), прикрепленный к коже головы. 
+                Передатчик посылает информацию к электродам, имплантированным в улитку внутреннего уха. 
+                Электрические импульсы от улитки передаются в мозг, позволяя человеку слышать.
+            </Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

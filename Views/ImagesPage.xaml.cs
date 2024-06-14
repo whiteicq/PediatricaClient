@@ -6,4 +6,9 @@ public partial class ImagesPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private async void TapGestureRecognizer_Tapped1(object sender, TappedEventArgs e)
+    {
+		await Navigation.PushAsync(new SingleImage());
+    }
 }

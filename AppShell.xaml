@@ -9,6 +9,6 @@
     Title="PediatricaUI">
 
     <ShellContent Title="Articles"
-              ContentTemplate="{DataTemplate views:ArticlePage}"/>
+              ContentTemplate="{DataTemplate views:ArticlesPage}"/>
 
 </Shell>

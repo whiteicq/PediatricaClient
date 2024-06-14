@@ -2,8 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             x:Class="PediatricaUI.Views.ArticlePage"
-             Title="ArticlePage">
+             x:Class="PediatricaUI.Views.ArticlesPage"
+             Title="ArticlesPage">
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style x:Key="ExpanderHeaderStyle" TargetType="Label">
@@ -27,7 +27,7 @@
             <Color x:Key="BorderColorExpanderHeader">Black</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
-    
+
     <!--TODO: Добавить стрелку-->
     <ScrollView>
         <VerticalStackLayout>
@@ -39,13 +39,10 @@
                         </Label>
                     </Border>
                 </toolkit:Expander.Header>
-                <!--Для норм отображения, можно задать лимит на кол-во символов, после которого нужно переключать LineBreakMode-->
-                <!--Или же нужно задать максимальную высоту чтобы не скакали размеры?-->
-                <!--п.с. это походу лучше через тригеры делать или хз-->
                 <VerticalStackLayout>
                     <Border>
                         <Label Style="{StaticResource ExpanderContentStyle}">
-                            Обзор психических расстройств у детей и подростков
+                            Колика
 
                             <Label.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
@@ -54,48 +51,80 @@
                     </Border>
                     <Border>
                         <Label Style="{StaticResource ExpanderContentStyle}">
-                            Обзор тревожных расстройств у детей и подростков
+                            Запор у детей
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
                         </Label>
                     </Border>
                     <Border>
                         <Label Style="{StaticResource ExpanderContentStyle}">
-                            Генерализованное тревожное расстройство у детей и подростков
-                        </Label> 
-                    </Border>
-                    <Border>
-                        <Label Style="{StaticResource ExpanderContentStyle}">
-                            Тревожное расстройство, вызванное разлукой
+                            Кашель у детей
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
                         </Label>
                     </Border>
                     <Border>
                         <Label Style="{StaticResource ExpanderContentStyle}">
-                            Социофобия у детей и подростков
+                            Плач
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
                         </Label>
                     </Border>
                     <Border>
                         <Label Style="{StaticResource ExpanderContentStyle}">
-                            Обсессивно-компульсивное расстройство (ОКР) и связанные с ним расстройства у детей и подростков
+                            Диарея у детей
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
                         </Label>
                     </Border>
                     <Border>
                         <Label Style="{StaticResource ExpanderContentStyle}">
-                            Соматические и ассоциированные с ними расстройства у детей
+                            Лихорадка у детей грудного и младшего возраста
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
                         </Label>
                     </Border>
                     <Border>
                         <Label Style="{StaticResource ExpanderContentStyle}">
-                            Паническое расстройство у детей и подростков
+                            Тошнота и рвота у младенцев и детей
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
                         </Label>
                     </Border>
                     <Border>
                         <Label Style="{StaticResource ExpanderContentStyle}">
-                            Агорафобия у детей и подростков
+                            Сыпь у детей грудного и младшего возраста
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
                         </Label>
                     </Border>
-                    
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Сепарационная тревога и страх незнакомых людей
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
                 </VerticalStackLayout>
             </toolkit:Expander>
-        
+
+            
             <toolkit:Expander>
                 <toolkit:Expander.Header>
                     <Border Stroke="{StaticResource BorderColorExpanderHeader}">
@@ -132,9 +161,3425 @@
                             </Label.GestureRecognizers>
                         </Label>
                     </Border>
-                    
                 </VerticalStackLayout>
-                
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Вакцинация в детском возрасте
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Вакцинация в детском возрасте
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Недоверие к вакцинам
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Поведенческие нарушения и проблемы у детей
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Обзор поведенческих нарушений у детей
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Приступы задержки дыхания
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Расстройства пищевого поведения у детей
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Избегание школы
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Расстройства сна у детей
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Истерики
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Насилие у детей и подростков
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Заболевания костей у детей
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Врожденная гипофосфатазия
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Идиопатический сколиоз
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Обзор остеохондрозов (Overview of Osteochondroses)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Болезнь костей Келлера
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Болезнь Легга-Кальве-Пертеса
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Болезнь Осгуда-Шлаттера
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Болезнь Шойермана
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Болезнь Шойермана
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Болезнь Шойермана
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Обзор остеопетрозов (Overview of Osteopetroses)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Краниотубулярные дисплазии
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Краниотубулярный гиперостоз
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Остеосклероз
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Эпифизеолиз головки бедренной кости (SCFE)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Уход за новорожденными и младенцами
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Начальная оценка новорожденного без патологии
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Объективный осмотр новорожденного
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Скрининговые тесты для новорождённых
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Уход за здоровым новорожденным
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Питание новорожденных
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Грудное вскармливание
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Искусственное вскармливание
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Твердые продукты питания в грудном возрасте
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Сон у младенцев и детей
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Прорезывание зубов
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Курс по уходу за больными детьми и их семьями
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Уход за больными новорожденными
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Дети с хроническими заболеваниями
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Смерть и умирание детей
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>     
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Плохое обращение с детьми
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Обзор жестокого обращения с детьми (Overview of Child Maltreatment)
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Повреждения женских половых органов
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>         
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Хромосомные и генетические аномалии
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Overview of Chromosomal Abnormalities
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Синдром Дауна (трисомия 21)
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Трисомия по 18 хромосоме
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Трисомия по 13 хромосоме
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Синдромы хромосомных делеций
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Микроделеционные и микродупликационные синдромы
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Обзор аномалий половых хромосом
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Синдром Шерешевского-Тернера
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Синдром Клайнфельтера (47, XXY)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Синдром 47,XYY
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Другие аномалии Х-хромосомы
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Синдром ломкой Х-хромосомы
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Распространенные вирусные инфекции у младенцев и детей
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Корь
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Подострый склерозирующий панэнцефалит (ПСП)
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Эпидемический паротит (свинка)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Краснуха
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Прогрессивный панэнцефалит краснухи
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Микроделеционные и микродупликационные синдромы
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Младенческая розеола
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Инфекционная эритема (парвовирусная инфекция B19)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Респираторно-синцитиальный вирус (РСВ) и инфекция, вызванная человеческим метапневмовирусом
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Врожденные сердечно-сосудистые аномалии
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Краткий обзор врожденных сердечно-сосудистых аномалий (Overview of Congenital Cardiovascular Anomalies)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Аортопульмональное окно
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Дефект межпредсердной перегородки (ДМПП)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Атриовентрикулярный дефект межпредсердной перегородки
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Двустворчатым аортальным клапаном
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Коарктация аорты
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Врождённая скорректированная транспозиция магистральных артерий
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Правый желудочек с двойным отхождением магистральных сосудов
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Аномалию Эбштейна
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Синдром Эйзенменгера
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Синдром гипоплазии левых отделов сердца
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Открытый артериальный проток (ОАП)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Общий артериальный ствол
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Тетрада Фалло
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border><Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Общий аномальный легочный венозный возврат (ОАЛВВ)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border><Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Транспозиция магистральных артерий (ТМА)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border><Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Атрезия трехстворчатого клапана
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border><Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Дефект межжелудочковой перегородки (ДМЖП)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border><Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Другие врожденные аномалии сердца
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Врожденные черепно-лицевые и мышечно-скелетные аномалии
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Введение во врожденные черепно-лицевые и мышечно-скелетные аномалии
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Множественный врождённый артрогрипоз
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Врожденный вывих колена
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Врожденные патологии конечностей
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Врожденные мышечные аномалии
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Врожденные аномалии шеи и спины
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Прогрессирующая дисплазия тазобедренного сустава (ПДТС)
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Торсия бедра (скручивание)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Варусное колено (О-образное искривление ног) и наружное отклонение голени(Х-образные ноги)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Эквиноварусная деформация стопы (косолапость) и другие аномалии стоп
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Антеверсия большеберцовой кости
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Обзор врожденных черепно-лицевых аномалий (Overview of Congenital Craniofacial Abnormalities)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Расщепление губы и заячья губа
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Врожденные аномалии уха
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border><Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Врожденные глазные аномалии
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border><Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Врожденные аномалии челюсти
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border><Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Краниосиностоз
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border><Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Макроцефалия
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border><Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Микроцефалия
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Врожденные аномалии желудочно-кишечного тракта
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Обзор врожденных аномалий желудочно-кишечного тракта (Overview of Congenital GI Anomalies)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Атрезия пищевода
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Еюноилеальная атрезия
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Атрезия заднего прохода
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Болезнь Гиршпрунга
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Мальротация кишечника
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Кишечная дупликация
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Атрезия желчных протоков
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Диафрагмальная грыжа
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Гастрошизис
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Омфалоцеле
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Врожденные неврологические аномалии
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Обзор врожденных неврологических аномалий
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Анэнцефалия
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Энцефалоцеле (мозговая грыжа)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Гидроцефалия
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Пороки развития полушарий головного мозга
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Порэнцефалия
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Синдром Ретта
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Септооптическая дисплазия
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Spina Bifida (расщепление позвоночника)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Врождённые аномалии почек и мочевыводящих путей
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Общий обзор врождённых аномалий мочеполовой системы
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Аномалии мочевого пузыря
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Крипторхизм
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Пенильные и уретральные аномалии
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Синдром подрезанного живота (синдром триады)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Почечные аномалии
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Аномалии яичек и мошонки
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Аномалии мочеточников
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Пороки развития влагалища
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Везикоуретеральный рефлюкс (ВУР)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Врождённые нарушения канальцевого транспорта
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Синдром Барттера и синдром Гительмана
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Цистинурия
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Гипофосфатемический рахит
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Заболевания соединительной ткани у детей
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Введение в заболевания соединительной ткани у детей
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Хондромаляция надколенника
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Эластолизис (Cutis Laxa)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Синдромы Элерса-Данлоса
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Инфрапателлярный тендинит
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Синдром Марфана
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Синдром ногтя-надколенника
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Остеохондродисплазии (остеохондродиспластическая карликовость)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Несовершенный остеогенез
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Эластическая псевдоксантома
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Муковисцидоз (кистозный фиброз)
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Муковисцидоз
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Обезвоживание и инфузионная терапия у детей
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Обезвоживание у детей
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Оральная регидратация
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Различные болезни уха, горла и носа у детей
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Нарушение слуха у детей
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Ювенильные ангиофибромы
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Рецидивирующий респираторный папилломатоз
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Коммуникативные расстройства у детей
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Эндокринные расстройства у детей
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Сахарный диабет у детей и подростков
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Гипертиреоз у детей грудного и младшего возраста
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Гипотиреоз у детей грудного и младшего возраста
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Врожденный зоб
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Преждевременное половое созревание
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Задержка полового созревания
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Мужской гипогонадизм у детей
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Дефицит гормона роста у детей
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Обзор врожденной дисфункции коры надпочечников (Overview of Congenital Adrenal Hyperplasia)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Врожденная гиперплазия надпочечников, вызванная дефицитом 21-гидроксилазы
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Врожденная гиперплазия надпочечников, вызванная дефектом 11-бета-гидроксилазы
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Дефекты и заболевания глаз у детей
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Амблиопия
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Врожденная катаракта
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Первичная ювениальная глаукома
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Ретинопатия недоношенных
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Косоглазие
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Желудочно-кишечные расстройства у новорожденных и младенцев
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Обзор желудочно-кишечных расстройств у новорожденных и младенцев (Overview of GI Disorders in Neonates and Infants)
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Гастроэзофагеальный рефлюкс у младенцев
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Гипертрофический стеноз привратника
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Инвагинация
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Непроходимость мекония
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Синдром мекониальной блокады
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Некротический энтероколит
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Неонатальный холестаз
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Различные хирургические неотложные состояния у новорождённых
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Рост и развитие
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Введение Рост и развитие
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Физический рост младенцев и детей
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Развитие детей
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Физический рост и половое созревание подростков
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Развитие подростков
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Синдромы наследственной периодической лихорадки
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Обзор синдромов наследственной периодической лихорадки (Overview of Hereditary Periodic Fever Syndromes)
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Семейная средиземноморская лихорадка
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Наследственные периодические криопирин-ассоциированные синдромы (криопиринопатии)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Гипер-IgD синдром
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            PAPA-синдром
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            PFAPA-синдром
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Периодический синдром, ассоциированный с рецептором ФНО (TRAPS)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Как выполнять урологические процедуры в педиатрии
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Как проводить катетеризацию мочевого пузыря у девочек
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Как проводить катетеризацию мочевого пузыря у ребенка мужского пола
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Как проводить надлобковую аспирацию мочевого пузыря у ребенка
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Инфекция вирусом иммунодефицита человека (ВИЧ) у младенцев и детей
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Инфекция вирусом иммунодефицита человека (ВИЧ) у младенцев и детей
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Антиретровирусная терапия у детей
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Гипертония у детей
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Гипертония у детей
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Препараты для лечения артериальной гипертензии у детей
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Гипертонические кризы у детей
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Инфекционные заболевания в периоде новорожденности
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Обзор неонатальных инфекций (Overview of Neonatal Infections)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Антибиотики для новорожденных
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Врожденная и перинатальная цитомегаловирусная (ЦМВ)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Врожденная краснуха
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Врожденный сифилис
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Врожденный токсоплазмоз
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Неонатальный конъюнктивит
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Неонатальная инфекция, вызванная вирусом гепатита B (ВГВ)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Неонатальная инфекция вирусом простого герпеса (ВПГ)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Внутрибольничные инфекции у новорожденных
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Листериоз новорожденных
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Бактериальный менингит новорожденных
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Пневмония новорожденных
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Неонатальный сепсис
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border><Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Перинатальный туберкулез (ТБ)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Наследственные мышечные заболевания
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Наследственные мышечные заболевания Введение
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Мышечная дистрофия Дюшенна и мышечная дистрофия Беккера
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Дистрофия Эмери–Дрейфуса
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Плече-лопаточно-лицевая мышечная миопатия
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Дистрофия Лейдена
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Миотоническая дистрофия
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Врожденная миотония
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Врожденные миопатии
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Семейный периодический паралич
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Ювенильный идиопатический артрит
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Ювенильный идиопатический артрит (ЮИА)
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Расстройства обучения и психического развития
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Синдром дефицита внимания с гиперактивностью (СДВ, СДВГ)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Расстройства аутистического спектра
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Умственная отсталость
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Обзор нарушений способности к обучению (Overview of Learning Disorders)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Дислексия
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Психические расстройства у детей и подростков
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Обзор психических расстройства у детей и подростоков
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Обзор тревожных расстройств у детей и подростков (Overview of Anxiety Disorders in Children and Adolescents)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Генерализованное тревожное расстройство у детей и подростков
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Тревожное расстройство, вызванное разлукой
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Социофобия у детей и подростков
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Обсессивно-компульсивное расстройство (ОКР) и связанные с ним расстройства у детей и подростков
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Соматические и ассоциированные с ними расстройства у детей
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Паническое расстройство у детей и подростков
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Агорафобия у детей и подростков
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Острые и посттравматические стрессовые расстройства (ОСР и ПТСР) у детей и подростков
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Депрессивные расстройства у детей и подростков
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Биполярное расстройство у детей и подростков
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Суицидальное поведение у детей и подростков
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border><Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Несуицидальное самоповреждение (NSSI) у детей и подростков
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Шизофрения у детей и подростков
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Оппозиционно-вызывающее расстройство (ОВР)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Расстройства поведения
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Метаболические, электролитные и токсические нарушения у новорожденных
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Неонатальная гипербилирубинемия
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Ядерная желтуха
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Неонатальная гиперкальциемия
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Неонатальная гипокальциемия
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Неонатальная гипергликемия
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Неонатальная гипогликемия
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Неонатальная гипернатриемия
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Неонатальная гипонатриемия
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Пренатальное воздействие препаратов
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Фетальный алкогольный синдром
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+
+
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Различные бактериальные инфекции у детей грудного и младшего возраста
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Бактериальный менингит у детей старше 3 месяцев
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Скрытая бактеремия и лихорадка без видимого источника у детей грудного и младшего возраста
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Инфекции мочевыводящих путей (ИМП) у детей
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Ревматическая лихорадка
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Различные нарушения у младенцев и детей
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            BRUE (быстро разрешившееся необъяснимое событие)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Внезапная неожиданная детская смерть (SUID) и синдром внезапной детской смерти (СВДС)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Задержка развития у детей
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Болезнь Кавасаки
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Синдром Рейе
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Прогерия
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Нейрокутанные синдромы
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Нейрофиброматоз
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Синдром Штурге–Вебера
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Комплекс туберозного склероза (КТС)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Болезнь Гиппеля–Линдау (цереброретинальный ангиоматоз)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+
+
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Неврологические расстройства у детей
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Детский церебральный паралич (ДЦП)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Фебрильные судороги
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Инфантильные спазмы
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Неонатальная эпилепсия
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Тики и синдром Туретта у детей и подростков
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+
+
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Злокачественные опухоли у детей
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Обзор злокачественных новообразований у детей (Overview of Pediatric Cancer)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Обзор опухолей центральной нервной системы у детей
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Астроцитомы
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Медуллобластома
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Эпендимомы
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Нейробластома
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Ретинобластома
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Опухоль Вильмса
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Рабдомиосаркома
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Перинатальные гематологические нарушения
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Перинатальная анемия
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Перинатальная полицитемия и синдром повышенной вязкости
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>            
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Перинатальная физиология
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Перинатальная физиология
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Проблемы перинатального периода
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Гестационный возраст
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Параметры роста новорожденных
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Реанимация новорожденного
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Родовые травмы
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Гипотермия у новорожденных
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Крупный для гестационного возраста (LGA) младенец
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Переношенные дети
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Недоношенные младенцы
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Маленькие для своего гестационного возраста (АГА) младенцы
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>     
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Принципы фармакотерапии в педиатрии
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Обзор принципов фармакотерапии в педиатрии (Overview of Drug Treatment in Children)
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Фармакокинетика у детей
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Несоблюдение режима лечения у детей
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>     
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Проблемы подросткового возраста
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Проблемы подросткового возраста Введение
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Проблемы поведения у подростков
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Контрацепция и беременность в подростковом возрасте
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Употребление наркотиков и психоактивных веществ в подростковом возрасте
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Ожирение у подростков
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Обзор психосоциальных проблем в подростковом возрасте (Overview of Psychosocial Problems in Adolescents)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Физические проблемы подростков
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Школьные проблемы подростков
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>            
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Респираторные заболевания у детей раннего возраста
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Бактериальный трахеит
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Бронхиолит
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Круп
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Свистящие хрипы и астма у младенцев и детей раннего возраста
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Респираторные проблемы у новорожденных
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Обзор перинатальных респираторных заболеваний (Overview of Perinatal Respiratory Disorders)
+                            
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Респираторная поддержка новорожденных и младенцев
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Апноэ недоношенных
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Бронхолегочная дисплазия (БЛД)
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Синдром аспирации мекония
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Персистирующая легочная гипертензия новорожденных
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Синдромы утечки воздуха в легких
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Респираторный дистресс-синдром у новорожденных
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Преходящее тахипноэ новорожденных
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+            
+            
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Недержание стула у детей
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Недержание стула у детей
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
+            </toolkit:Expander>
+
+
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <Border Stroke="{StaticResource BorderColorExpanderHeader}">
+                        <Label Style="{StaticResource ExpanderHeaderStyle}">
+                            Недержание мочи у детей
+                        </Label>
+                    </Border>
+                </toolkit:Expander.Header>
+                <VerticalStackLayout>
+                    <Border>
+                        <Label Style="{StaticResource ExpanderContentStyle}">
+                            Недержание мочи у детей
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Border>
+                </VerticalStackLayout>
             </toolkit:Expander>
         </VerticalStackLayout>
     </ScrollView>
