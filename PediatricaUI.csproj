@@ -75,6 +75,61 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\PediatricaAPI\ArticlesAPI\DataAccessLayer\DataAccessLayer.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="ImagePages\Angiofibroma.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ImagePages\Angiokeratoma.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ImagePages\Anoftalmia.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ImagePages\AtopDermatit.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ImagePages\Atrezia.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ImagePages\BacterialTraheitEndoscope.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ImagePages\BacterialTraheitRentgen.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ImagePages\BronchopulmonaryDysplasia.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ImagePages\HirschsprungsDisease.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ImagePages\KawasakiDisease.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ImagePages\RashkindProcedure.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ImagePages\TaySachsDisease.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ImagePages\VacterlDown.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ImagePages\VacterlUp.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ImagePages\PAPA.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ImagePages\WDermatit.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ImagePages\XLegs.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Resources\Styles\ExpanderContentStyle.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -93,12 +148,27 @@
 	  <MauiXaml Update="Views\SingleArticle.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\SingleImage.xaml">
+	  <MauiXaml Update="ImagePages\EarImplant.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="ImagePages\Anoftalmia.xaml.cs">
+	    <DependentUpon>Anoftalmia.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="ImagePages\Atrezia.xaml.cs">
+	    <DependentUpon>Atrezia.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="ImagePages\VacterlUp.xaml.cs">
+	    <DependentUpon>VacterlUp.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="ImagePages\PAPA.xaml.cs">
+	    <DependentUpon>PAPA.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="ImagePages\EarImplant.xaml.cs">
+	    <DependentUpon>EarImplant.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Views\ArticlesPage.xaml.cs">
 	    <DependentUpon>ArticlesPage.xaml</DependentUpon>
 	  </Compile>

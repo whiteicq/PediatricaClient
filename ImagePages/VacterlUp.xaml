@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PediatricaUI.ImagePages.VacterlUp"
+             Title="VACTERL-синдром (недоразвития верхней конечности)">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image Source="vacterl_up.jpg"/>
+            <Label>
+                На этой фотографии показана лучевая атрезия правой руки у пациента с VACTERL синдромом (Vertebral anomalies – позвоночные аномалии, Anal atresia – анальная атрезия, Cardiac malformations – пороки развития сердца, TracheoEsophageal fistula – трахеоэзофагеальный свищ, Renal anomalies – почечные аномалии, Radial aplasia – радиальная аплазия и Limb anomalies – аномалии конечностей).</Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

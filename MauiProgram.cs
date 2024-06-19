@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using CommunityToolkit.Maui;
+using DataAccessLayer.Database;
 
 namespace PediatricaUI
 {
@@ -15,14 +16,14 @@ namespace PediatricaUI
                 .UseMauiApp<App>()
                 
                 .UseMauiCommunityToolkit()
-
+                
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                     /*fonts.AddFont("Inter-Variable.ttf", "InterVariable");*/
                 });
-            
+            builder.Services.AddDbContext<ArticleDbContext>();
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif

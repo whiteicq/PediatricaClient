@@ -1,20 +1,25 @@
+
+using DataAccessLayer.Database;
+
 namespace PediatricaUI.Views;
 
 public partial class ArticlesPage : ContentPage
 {
-	public ArticlesPage()
+    private ArticleDbContext _db;
+	public ArticlesPage(ArticleDbContext db)
 	{
+        _db = db;
 		InitializeComponent();
     }
 
-	// для аккордеона все-таки надо сделать норм апишку чтобы связывать Категории со Статьями
 
     private async void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
     {
+        Label currLabel = sender as Label;
+        string titleArticle = currLabel.Text;
 
-		await DisplayAlert("Работает", "Норм", "Ok");
-		/*string articleTitle = (sender as Label).Text; 
-		// дальше посылать запрос на получение статьи с соответствующим названием
-		await Navigation.PushAsync(new SingleArticle());*/
+/*        var currArticle = _db.Articles.FirstOrDefault(article => article.Title == titleArticle);
+*/
+        await Navigation.PushAsync(new SingleArticle(/*currArticle*/));
     }
 }

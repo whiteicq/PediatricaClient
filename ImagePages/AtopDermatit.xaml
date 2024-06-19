@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PediatricaUI.ImagePages.AtopDermatit"
+             Title="Атопический дерматит (острая форма)">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="SingleImageStyle" TargetType="Image">
+                <Setter Property="Margin" Value="20,20,20,20"/>
+            </Style>
+            <Style x:Key="ImageLabelStyle" TargetType="Label">
+                <Setter Property="Margin" Value="15"/>
+                <Setter Property="FontSize" Value="18"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image Source="atopic_dermatitis.jpg" Style="{StaticResource SingleImageStyle}"/>
+            <Label Style="{StaticResource ImageLabelStyle}">
+                Атопический дерматит обычно развивается в грудном возрасте. В острой фазе на лице появляются очаги, а затем распространяются по шее, волосистой части головы и конечностях.
+            </Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

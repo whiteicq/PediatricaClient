@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PediatricaUI.ImagePages.HirschsprungsDisease"
+             Title="Болезнь Гиршпрунга">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image Source="hirschsprungs_disease.jpg"/>
+            <Label>
+                Эта бариевая клизма показывает аганглиооз до селезеночного изгиба. Участок кишечника, на котором отсутствует иннервация, суженный и спастический (справа), в то время как нормально иннервированный проксимальный отдел кишечника (вверху) является расширенным и заполнен фекальным материалом.</Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

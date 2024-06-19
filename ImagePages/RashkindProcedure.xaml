@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PediatricaUI.ImagePages.RashkindProcedure"
+             Title="Балонная атриосептостомия (процедура Рашкинда)">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image Source="rashkind_procedure.jpg"/>
+            <Label>
+                При баллонной предсердной септостомии (процедура Рашкинда), катетер-баллон Фогарти продвигают в левое предсердие через открытое овальное окно. Баллон раздувают и резко продергивают в правое предсердие, увеличивая тем самым отверстие в межпредсердной перегородке. Процедура мгновенно улучшает системное насыщение артериальной крови кислородом.
+            </Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
