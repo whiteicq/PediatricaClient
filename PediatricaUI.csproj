@@ -131,6 +131,18 @@
 	  <MauiXaml Update="ImagePages\XLegs.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="MedicalCalculators\AnionGap.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MedicalCalculators\QTIntervalCorrection.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MedicalCalculators\SodiumDeficiency.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MedicalCalculators\TransferrinSaturation.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Resources\Styles\ExpanderContentStyle.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -191,6 +203,9 @@
 	  <MauiXaml Update="Views\ImagesPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\MedicalCalculatorsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\SingleArticle.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -217,6 +232,9 @@
 	  </Compile>
 	  <Compile Update="ImagePages\EarImplant.xaml.cs">
 	    <DependentUpon>EarImplant.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="MedicalCalculators\SodiumDeficiency.xaml.cs">
+	    <DependentUpon>SodiumDeficiency.xaml</DependentUpon>
 	  </Compile>
 	  <Compile Update="VideoPages\LaparoscopicLaddProcedure.xaml.cs">
 	    <DependentUpon>LaparoscopicLaddProcedure.xaml</DependentUpon>

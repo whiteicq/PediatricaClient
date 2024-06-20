@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PediatricaUI.MedicalCalculators.TransferrinSaturation"
+             Title="Коэффициент насыщения трансферрина железом">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="LabelCalcHeader" TargetType="Label">
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="0,0,0,20"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+            <Style x:Key="EntryCalcStyle" TargetType="Entry">
+                <Setter Property="Margin" Value="0,0,0,20"/>
+                <Setter Property="Keyboard" Value="Numeric"/>
+            </Style>
+            <Style x:Key="ButtonCalcStyle" TargetType="Button">
+                <Setter Property="Margin" Value="0,20,0,40"/>
+            </Style>
+            <Style x:Key="LabelCalcResult" TargetType="Label">
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="Margin" Value="0,20,0,0"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Label Text="Насыщение трансферрина" 
+            Style="{StaticResource LabelCalcHeader}"/>
+
+            <Label Text="Используемые уравнения:" FontSize="20" FontAttributes="Italic"/>
+            <Label Text="КНТ = (Fe (железо) / ОЖСС (Общая Железосвязывающая Способность Сыворотки)) * 100" FontSize="18" Margin="0,0,0,20"/>
+
+            <Label Text="Fe (железо) (мкГ/дл):" FontSize="17"/>
+            <Entry x:Name="FeEntry"
+            Placeholder="Введите Fe (железо) (мкг/дл)"
+            Style="{StaticResource EntryCalcStyle}"/>
+
+            <Label Text="ОЖСС (Общая Железосвязывающая Способность Сыворотки) (мкГ/дл):" FontSize="17"/>
+            <Entry x:Name="OJSSEntry"
+            Placeholder="Введите ОЖСС (мкГ/дл)"
+            Style="{StaticResource EntryCalcStyle}"/>
+
+            <Button Text="Рассчитать"
+            Clicked="OnCalculateButtonClicked"
+            Style="{x:StaticResource ButtonCalcStyle}"/>
+
+            <Label x:Name="ResultLabel" 
+       Style="{StaticResource LabelCalcResult}"/>
+            
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

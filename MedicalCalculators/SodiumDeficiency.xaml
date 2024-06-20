@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PediatricaUI.MedicalCalculators.SodiumDeficiency"
+             Title="Калькулятор дефицита натрия">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="LabelCalcHeader" TargetType="Label">
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="0,0,0,20"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+            <Style x:Key="EntryCalcStyle" TargetType="Entry">
+                <Setter Property="Margin" Value="0,0,0,20"/>
+                <Setter Property="Keyboard" Value="Numeric"/>
+            </Style>
+            <Style x:Key="ButtonCalcStyle" TargetType="Button">
+                <Setter Property="Margin" Value="0,20,0,40"/>
+            </Style>
+            <Style x:Key="LabelCalcResult" TargetType="Label">
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="Margin" Value="0,20,0,20"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Label Text="Калькулятор дефицита натрия" 
+               Style="{StaticResource LabelCalcHeader}"/>
+
+            <Label Text="Примечания" FontSize="20" FontAttributes="Bold"  Margin="0,0,0,10"/>
+            <Label FontSize="17" Margin="0,0,0,7" Text="Выражение Пол * Нормальный Вес тела представляет нормальное общее количество воды в организме (ОКВО)."/>
+            <Label FontSize="17" Margin="0,0,0,7" Text="Нормальное ОКВО специфично полу, о чем свидетельствуют факторы 0.6 и 0.5 выше."/>
+
+            <Label Text="Используемые уравнения:" FontSize="20" FontAttributes="Italic"/>
+            <Label Text="Дефицит натрия = Пол * Норм. вес * (Желаемый натрий - Натрий сыворотки)" FontSize="18" Margin="0,0,0,20"/>
+
+            <Label Text="Нормальный вес (кг):" FontSize="17"/>
+            <Entry x:Name="WeightEntry"
+               Placeholder="Введите нормальный вес (кг)"
+               Style="{StaticResource EntryCalcStyle}"/>
+
+            <Label Text="Натрий сыворотки (мЭкв/л):" FontSize="17"/>
+            <Entry x:Name="SerumSodiumEntry"
+               Placeholder="Введите натрий сыворотки (мЭкв/л)"
+               Style="{StaticResource EntryCalcStyle}"/>
+
+            <Label Text="Желаемый натрий (мЭкв/л):" FontSize="17"/>
+            <Entry x:Name="DesiredSodiumEntry"
+               Placeholder="Введите желаемый натрий (мЭкв/л)"
+               Style="{StaticResource EntryCalcStyle}"/>
+
+            <Label Text="Выберите пол:" 
+               FontSize="17" 
+               HorizontalOptions="Center"
+               Margin="0,20,0,0"/>
+
+            <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="Center">
+                <RadioButton x:Name="MaleRadioButton"
+                         Content="Мужчина (0.6)"
+                         GroupName="Gender"/>
+                <RadioButton x:Name="FemaleRadioButton"
+                         Content="Женщина (0.5)"
+                         GroupName="Gender"/>
+            </StackLayout>
+
+            <Button Text="Рассчитать"
+                Clicked="OnCalculateButtonClicked"
+                Style="{x:StaticResource ButtonCalcStyle}"/>
+
+            <Label x:Name="ResultLabel" 
+               Style="{StaticResource LabelCalcResult}"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

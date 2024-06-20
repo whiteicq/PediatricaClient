@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PediatricaUI.Views.MedicalCalculatorsPage"
+             Title="MedicalCalculatorsPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="LinkToSingleCalculatorStyle" TargetType="Label">
+                <Setter Property="MinimumHeightRequest" Value="51"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="BackgroundColor" Value="#ffffff"/>
+                <Setter Property="TextColor" Value="#8F8282"/>
+                <Setter Property="TextColor" Value="#8F8282"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ScrollView>
+        <VerticalStackLayout>
+            <Border>
+                <Label Style="{StaticResource LinkToSingleCalculatorStyle}">
+                    Анионная разница
+
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
+            <Border>
+                <Label Style="{StaticResource LinkToSingleCalculatorStyle}">
+                    Дефицит натрия при гипонатриемии
+
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped2"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
+            <Border>
+                <Label Style="{StaticResource LinkToSingleCalculatorStyle}">
+                    Коррекция интервала QT (ЭКГ)
+
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped3"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
+            <Border>
+                <Label Style="{StaticResource LinkToSingleCalculatorStyle}">
+                    Коэффициент насыщения трансферрина железом
+
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped4"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

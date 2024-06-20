@@ -26,6 +26,11 @@ namespace PediatricaUI
         {
             await Navigation.PushAsync(new VideoPage());
         }
+
+        private async void ToCalculatorsPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MedicalCalculatorsPage());
+        }
     }
 
 }
