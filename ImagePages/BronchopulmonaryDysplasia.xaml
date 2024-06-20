@@ -3,10 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PediatricaUI.ImagePages.BronchopulmonaryDysplasia"
              Title="Бронхолегочная дисплазия (рентгенография и КТ)">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="SingleImageStyle" TargetType="Image">
+                <Setter Property="Margin" Value="20,20,20,20"/>
+            </Style>
+            <Style x:Key="ImageLabelStyle" TargetType="Label">
+                <Setter Property="Margin" Value="15"/>
+                <Setter Property="FontSize" Value="18"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <ScrollView>
         <VerticalStackLayout>
-            <Image Source="bronchopulmonary_dysplasia.jpg"/>
-            <Label>
+            <Image Style="{StaticResource SingleImageStyle}" Source="bronchopulmonary_dysplasia.jpg"/>
+            <Label Style="{StaticResource ImageLabelStyle}">
                 Младенец на этих изображениях имеет в анамнезе недоношенность и бронхолегочную дисплазию. На рентгенографии грудной клетки слева показано грубое ретикулярное легочное затемнение и гиперинфляция обоих легких. На КТ-изображении справа визуализируются грубое ретикулярное затемнение легочной ткани и нарушение воздушности легкого, вызванные лежащими в основе альвеолярным перегородочным фиброзом и повышением воздушности паренхимы легкого.
             </Label>
         </VerticalStackLayout>

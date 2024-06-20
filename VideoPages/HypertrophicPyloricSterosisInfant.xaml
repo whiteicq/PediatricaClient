@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="PediatricaUI.VideoPages.HypertrophicPyloricSterosisInfant"
+             Title="Гипертрофический пилоростероз у младенцев">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="SingleVideoStyle" TargetType="toolkit:MediaElement">
+                <Setter Property="Margin" Value="20,20,20,20"/>
+                <Setter Property="WidthRequest" Value="400"/>
+                <Setter Property="HeightRequest" Value="300"/>
+                <Setter Property="ShouldAutoPlay" Value="True"/>
+                <Setter Property="Volume" Value="75"/>
+            </Style>
+            <Style x:Key="VideoLabelStyle" TargetType="Label">
+                <Setter Property="Margin" Value="15"/>
+                <Setter Property="FontSize" Value="18"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <toolkit:MediaElement Style="{StaticResource SingleVideoStyle}" Source="https://medtube.net/uploads/8/e/100258e5797ad2cf2e329c8cc18e65e7e9d0_mpg_hd.mp4" />
+
+            <Label Style="{StaticResource VideoLabelStyle}">
+                Хирургический видеослучай: гипертрофический пилоростероз у ребенка. Время работы 7 мин. Выписан на следующий день на полноценном энтеральном питании. Видео не редактируется.</Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

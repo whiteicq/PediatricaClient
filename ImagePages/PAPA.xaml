@@ -3,10 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PediatricaUI.ImagePages.PAPA"
              Title="PAPA-синдром (гнойный артрит, гангренозная пиодермия и акне – от англ Pyogenic Arthritis, Pyoderma gangrenosum и Acne)">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="SingleImageStyle" TargetType="Image">
+                <Setter Property="Margin" Value="20,20,20,20"/>
+            </Style>
+            <Style x:Key="ImageLabelStyle" TargetType="Label">
+                <Setter Property="Margin" Value="15"/>
+                <Setter Property="FontSize" Value="18"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <ScrollView>
         <VerticalStackLayout>
-            <Image Source="papa.jpg"/>
-            <Label>
+            <Image Style="{StaticResource SingleImageStyle}" Source="papa.jpg"/>
+            <Label Style="{StaticResource ImageLabelStyle}">
                 Гангренозная пиодермия (некротизация тканей с глубоким изъязвлением) и узелково-кистозные акне характерны для синдрома PAPA.
             </Label>
         </VerticalStackLayout>

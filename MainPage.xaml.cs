@@ -21,6 +21,11 @@ namespace PediatricaUI
         {
             await Navigation.PushAsync(new ImagesPage());
         }
+
+        private async void ToVideoPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new VideoPage());
+        }
     }
 
 }

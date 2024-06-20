@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="PediatricaUI.VideoPages.StoneInCysticDuctDiverticulum"
+             Title="Камень в дивертикуле пузырного протока у 7-летнего мальчика">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="SingleVideoStyle" TargetType="toolkit:MediaElement">
+                <Setter Property="Margin" Value="20,20,20,20"/>
+                <Setter Property="WidthRequest" Value="400"/>
+                <Setter Property="HeightRequest" Value="300"/>
+                <Setter Property="ShouldAutoPlay" Value="True"/>
+                <Setter Property="Volume" Value="75"/>
+            </Style>
+            <Style x:Key="VideoLabelStyle" TargetType="Label">
+                <Setter Property="Margin" Value="15"/>
+                <Setter Property="FontSize" Value="18"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <toolkit:MediaElement Style="{StaticResource SingleVideoStyle}" Source="https://medtube.net/uploads/5/9/08124593d312fcbc81d9658e664b27b35fe9_mp4_hd.mp4" />
+
+            <Label Style="{StaticResource VideoLabelStyle}">
+                Хирургический видеослучай: камни пузырного протока в настоящее время встречаются у меня довольно часто. У этого 7-летнего мальчика с камнями в желчном пузыре внутри дивертикула был камень пузырного протока. Лучше без каких-либо попыток поставить клипсу или лигатуру дистальнее камня, чтобы доить камень в сторону ЖП.
+            </Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -3,10 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PediatricaUI.ImagePages.WDermatit"
              Title="W - дерматит">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="SingleImageStyle" TargetType="Image">
+                <Setter Property="Margin" Value="20,20,20,20"/>
+            </Style>
+            <Style x:Key="ImageLabelStyle" TargetType="Label">
+                <Setter Property="Margin" Value="15"/>
+                <Setter Property="FontSize" Value="18"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <ScrollView>
         <VerticalStackLayout>
-            <Image Source="w_dermatit.jpg"/>
-            <Label>
+            <Image Style="{StaticResource SingleImageStyle}" Source="w_dermatit.jpg"/>
+            <Label Style="{StaticResource ImageLabelStyle}">
                 На фотографии показан пеленочный дерматит вследствие раздражения ("W-дерматит").
             </Label>
         </VerticalStackLayout>

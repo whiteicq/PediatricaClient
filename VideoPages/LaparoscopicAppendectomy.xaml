@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="PediatricaUI.VideoPages.LaparoscopicAppendectomy"
+             Title="Лапароскопическая аппендэктомия у 12-летнего мальчика">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="SingleVideoStyle" TargetType="toolkit:MediaElement">
+                <Setter Property="Margin" Value="20,20,20,20"/>
+                <Setter Property="WidthRequest" Value="400"/>
+                <Setter Property="HeightRequest" Value="300"/>
+                <Setter Property="ShouldAutoPlay" Value="True"/>
+                <Setter Property="Volume" Value="75"/>
+            </Style>
+            <Style x:Key="VideoLabelStyle" TargetType="Label">
+                <Setter Property="Margin" Value="15"/>
+                <Setter Property="FontSize" Value="18"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <toolkit:MediaElement Style="{StaticResource SingleVideoStyle}" Source="https://medtube.net/uploads/9/4/1125f948a6e451b7d47f10b0d30af62cb918_mp4_hd.mp4" />
+
+            <Label Style="{StaticResource VideoLabelStyle}">
+                Аппендэктомия на коленях у мальчика 12 лет через три порта 5 мм, для извлечения воспаленного приложения один порт заменен на порт 8 мм. В дополнение к петлям (*фирма скрыта*) применялась только монополярная и биполярная диатермия. Обратите внимание, что орошение ограничено областью приложения, чтобы избежать распространения инфекции.
+            </Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

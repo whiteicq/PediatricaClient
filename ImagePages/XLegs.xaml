@@ -3,10 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PediatricaUI.ImagePages.XLegs"
              Title="Вальгусное колено (х-образные ноги)">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="SingleImageStyle" TargetType="Image">
+                <Setter Property="Margin" Value="20,20,20,20"/>
+            </Style>
+            <Style x:Key="ImageLabelStyle" TargetType="Label">
+                <Setter Property="Margin" Value="15"/>
+                <Setter Property="FontSize" Value="18"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <ScrollView>
         <VerticalStackLayout>
-            <Image Source="x_legs.jpg"/>
-            <Label>
+            <Image Style="{StaticResource SingleImageStyle}" Source="x_legs.jpg"/>
+            <Label Style="{StaticResource ImageLabelStyle}">
                 Эта фотография показывает мальчика-подростка с вальгусной деформацией коленных суставов, которая приводит к искривлению ног вовнутрь так, что колени соприкасаются и стопы смещены наружу.
             </Label>
         </VerticalStackLayout>

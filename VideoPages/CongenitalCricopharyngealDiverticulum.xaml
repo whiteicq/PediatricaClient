@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="PediatricaUI.VideoPages.CongenitalCricopharyngealDiverticulum"
+             Title="Врожденный дивертикул крикоглотки с разрывом и образованием шейного свища">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="SingleVideoStyle" TargetType="toolkit:MediaElement">
+                <Setter Property="Margin" Value="20,20,20,20"/>
+                <Setter Property="WidthRequest" Value="400"/>
+                <Setter Property="HeightRequest" Value="300"/>
+                <Setter Property="ShouldAutoPlay" Value="True"/>
+                <Setter Property="Volume" Value="75"/>
+            </Style>
+            <Style x:Key="VideoLabelStyle" TargetType="Label">
+                <Setter Property="Margin" Value="15"/>
+                <Setter Property="FontSize" Value="18"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <toolkit:MediaElement Style="{StaticResource SingleVideoStyle}" Source="https://medtube.net/uploads/8/4/1003184637afe669bae54017ee37dc965224_mp4_hd.mp4" />
+
+            <Label Style="{StaticResource VideoLabelStyle}">
+                Хирургическое видео: 2-летняя девочка госпитализирована по поводу глубокого абсцесса шеи. Произведено дренирование абсцесса. Но в течение 1 года образовался шейный свищ. Была проведена повторная эндоскопия и, наконец, выявлен перстнефарингеальный дивертикул. Гид прошел через фистулу, что упростило процедуру. Дивертикул увеличен в размерах и закрыт в 2 слоя.
+            </Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

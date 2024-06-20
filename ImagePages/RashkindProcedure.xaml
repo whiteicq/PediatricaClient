@@ -3,10 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PediatricaUI.ImagePages.RashkindProcedure"
              Title="Балонная атриосептостомия (процедура Рашкинда)">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="SingleImageStyle" TargetType="Image">
+                <Setter Property="Margin" Value="20,20,20,20"/>
+            </Style>
+            <Style x:Key="ImageLabelStyle" TargetType="Label">
+                <Setter Property="Margin" Value="15"/>
+                <Setter Property="FontSize" Value="18"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <ScrollView>
         <VerticalStackLayout>
-            <Image Source="rashkind_procedure.jpg"/>
-            <Label>
+            <Image Style="{StaticResource SingleImageStyle}" Source="rashkind_procedure.jpg"/>
+            <Label Style="{StaticResource ImageLabelStyle}">
                 При баллонной предсердной септостомии (процедура Рашкинда), катетер-баллон Фогарти продвигают в левое предсердие через открытое овальное окно. Баллон раздувают и резко продергивают в правое предсердие, увеличивая тем самым отверстие в межпредсердной перегородке. Процедура мгновенно улучшает системное насыщение артериальной крови кислородом.
             </Label>
         </VerticalStackLayout>

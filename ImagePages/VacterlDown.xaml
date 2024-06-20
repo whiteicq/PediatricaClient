@@ -3,10 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PediatricaUI.ImagePages.VacterlDown"
              Title="VACTERL-синдром (недоразвития нижней конечности)">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="SingleImageStyle" TargetType="Image">
+                <Setter Property="Margin" Value="20,20,20,20"/>
+            </Style>
+            <Style x:Key="ImageLabelStyle" TargetType="Label">
+                <Setter Property="Margin" Value="15"/>
+                <Setter Property="FontSize" Value="18"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <ScrollView>
         <VerticalStackLayout>
-            <Image Source="vacterl_down.jpg"/>
-            <Label>
+            <Image Style="{StaticResource SingleImageStyle}" Source="vacterl_down.jpg"/>
+            <Label Style="{StaticResource ImageLabelStyle}">
                 На этой фотографии показана лучевая атрезия правой руки у пациента с VACTERL синдромом (Vertebral anomalies – позвоночные аномалии, Anal atresia – анальная атрезия, Cardiac malformations – пороки развития сердца, TracheoEsophageal fistula – трахеоэзофагеальный свищ, Renal anomalies – почечные аномалии, Radial aplasia – радиальная аплазия и Limb anomalies – аномалии конечностей).
             </Label>
         </VerticalStackLayout>

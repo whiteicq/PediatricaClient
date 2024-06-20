@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="PediatricaUI.VideoPages.CholedochalCystExcision"
+             Title="Удаление кисты холедоха и гепатикоеюностомия RY у трехлетней девочки">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="SingleVideoStyle" TargetType="toolkit:MediaElement">
+                <Setter Property="Margin" Value="20,20,20,20"/>
+                <Setter Property="WidthRequest" Value="400"/>
+                <Setter Property="HeightRequest" Value="300"/>
+                <Setter Property="ShouldAutoPlay" Value="True"/>
+                <Setter Property="Volume" Value="75"/>
+            </Style>
+            <Style x:Key="VideoLabelStyle" TargetType="Label">
+                <Setter Property="Margin" Value="15"/>
+                <Setter Property="FontSize" Value="18"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <toolkit:MediaElement Style="{StaticResource SingleVideoStyle}" Source="https://medtube.net/uploads/5/b/1219c5bbfa14c6f96606356b71155090e1b4_mp4_hd.mp4" />
+
+            <Label Style="{StaticResource VideoLabelStyle}">
+                Трехлетняя девочка обратилась с жалобами последних лет на боль и рвоту. На МРХПГ ей поставили диагноз: киста холедоха 4 типа. Ей было выполнено лапароскопическое иссечение кисты холедоха с последующей гепатикоеюностомией RY. Послеоперационное восстановление осталось без особенностей. Установленный дренаж удален на 3-и сутки после операции, а на 4-й день девочка выписана в удовлетворительном состоянии.
+            </Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

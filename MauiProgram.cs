@@ -14,7 +14,7 @@ namespace PediatricaUI
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
-                
+                .UseMauiCommunityToolkitMediaElement()
                 .UseMauiCommunityToolkit()
                 
                 .ConfigureFonts(fonts =>

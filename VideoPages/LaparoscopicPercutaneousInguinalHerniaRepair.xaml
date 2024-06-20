@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="PediatricaUI.VideoPages.LaparoscopicPercutaneousInguinalHerniaRepair"
+             Title="LaparoscopicPercutaneousInguinalHerniaRepair">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="SingleVideoStyle" TargetType="toolkit:MediaElement">
+                <Setter Property="Margin" Value="20,20,20,20"/>
+                <Setter Property="WidthRequest" Value="400"/>
+                <Setter Property="HeightRequest" Value="300"/>
+                <Setter Property="ShouldAutoPlay" Value="True"/>
+                <Setter Property="Volume" Value="75"/>
+            </Style>
+            <Style x:Key="VideoLabelStyle" TargetType="Label">
+                <Setter Property="Margin" Value="15"/>
+                <Setter Property="FontSize" Value="18"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <toolkit:MediaElement Style="{StaticResource SingleVideoStyle}" Source="https://medtube.net/uploads/a/e/0124daeaac068a02ab0c54c287cbf40bf0b4_mp4_hd.mp4" />
+
+            <Label Style="{StaticResource VideoLabelStyle}">
+                Девочка 1,5 лет с правосторонней паховой грыжей. Оба паховых канала вскрыты интраоперационно. Грыжу ушивали чрескожно нерассасывающимся швом 4,0. Время операции составило 12 минут. Больной выписан через 24 часа.</Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

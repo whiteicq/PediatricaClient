@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PediatricaUI.VideoPages.LaparoscopicLaddProcedure"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Title="Одноэтапная лапароскопическая операция по Лэдду, аппендэктомия и фундопликация по Ниссену у 7-летнего мальчика">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="SingleVideoStyle" TargetType="toolkit:MediaElement">
+                <Setter Property="Margin" Value="20,20,20,20"/>
+                <Setter Property="WidthRequest" Value="400"/>
+                <Setter Property="HeightRequest" Value="300"/>
+                <Setter Property="ShouldAutoPlay" Value="True"/>
+                <Setter Property="Volume" Value="75"/>
+            </Style>
+            <Style x:Key="VideoLabelStyle" TargetType="Label">
+                <Setter Property="Margin" Value="15"/>
+                <Setter Property="FontSize" Value="18"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ScrollView>
+        <VerticalStackLayout>
+            <toolkit:MediaElement Style="{StaticResource SingleVideoStyle}" Source="https://medtube.net/uploads/4/u/230ba4d0b7ecf3192029d0fcdf9e98a427069782_sd.mp4" />
+
+            <Label Style="{StaticResource VideoLabelStyle}">
+                В фильме представлена ​​лапароскопическая операция у 7-летнего мальчика с подвздошной мышцей двенадцатиперстной кишки и гастроэзофагеальной рефлюксной болезнью. Предполагалось, что гастроэзофагеальный рефлюкс является вторичным по отношению к частичной непроходимости двенадцатиперстной кишки. При интраоперационном обследовании выявлено сращение желудка с передней стенкой живота и печенью (спонтанное - без ранее проведенных операций), плотные фиброзные тяжи, защемление и искривление нисходящей части двенадцатиперстной кишки, грыжа пищеводного отверстия диафрагмы. Для декомпрессии и выпрямления хода двенадцатиперстной кишки были освобождены повязки Лэдда, резецирован аппендикс (слепая кишка располагалась в левой верхней части живота) и выполнена типичная антирефлюксная процедура (фундопликация по Ниссену). За одну лапароскопическую операцию было выполнено три процедуры. Время операции составило 100 мин. Послеоперационный период протекал без осложнений . В настоящее время, через год после вмешательства, у пациента нет никаких симптомов, имевших место до операции. Операцию проводили в отделении хирургии пороков развития детей и травматологии в Забже.
+            </Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
