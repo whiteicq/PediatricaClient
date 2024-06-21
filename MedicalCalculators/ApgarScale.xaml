@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PediatricaUI.MedicalCalculators.ApgarScale"
+             Title="Шкала Апгар">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="LabelCalcHeader" TargetType="Label">
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="0,0,0,20"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+            <Style x:Key="EntryCalcStyle" TargetType="Entry">
+                <Setter Property="Margin" Value="0,0,0,20"/>
+                <Setter Property="Keyboard" Value="Numeric"/>
+            </Style>
+            <Style x:Key="ButtonCalcStyle" TargetType="Button">
+                <Setter Property="Margin" Value="0,20,0,40"/>
+            </Style>
+            <Style x:Key="LabelCalcResult" TargetType="Label">
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="Margin" Value="0,20,0,20"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Label Text="Калькулятор шкалы Апгар" 
+                   Style="{StaticResource LabelCalcHeader}"/>
+
+            <Label Text="Шкала Апгар:"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   Margin="0,20,0,10"/>
+
+            <Label FontSize="17" Margin="0,0,0,7" Text="7 - 10 баллов: Норма"/>
+            <Label FontSize="17" Margin="0,0,0,7" Text="0 - 6 баллов: Патологическое состояние"/>
+
+            <Label FontSize="17" Text="Сила и частота сердечных сокращений:"/>
+            <RadioButton x:Name="HeartRate_2" Content="100 ударов/минуту и более (2 балла)" GroupName="HeartRate"/>
+            <RadioButton x:Name="HeartRate_1" Content="Менее 100 (1 балл)" GroupName="HeartRate"/>
+            <RadioButton x:Name="HeartRate_0" Content="Отсутствует (0 баллов)" GroupName="HeartRate"/>
+
+            <Label FontSize="17" Text="Зрелость легких:"/>
+            <RadioButton x:Name="Breathing_2" Content="Правильное дыхание (2 балла)" GroupName="Breathing"/>
+            <RadioButton x:Name="Breathing_1" Content="Сбивчивое (1 балл)" GroupName="Breathing"/>
+            <RadioButton x:Name="Breathing_0" Content="Отсутствует (0 баллов)" GroupName="Breathing"/>
+
+            <Label FontSize="17"  Text="Мышечный тонус и движения:"/>
+            <RadioButton x:Name="MuscleTone_2" Content="Активные движения (2 балла)" GroupName="MuscleTone"/>
+            <RadioButton x:Name="MuscleTone_1" Content="Умеренные движения (1 балл)" GroupName="MuscleTone"/>
+            <RadioButton x:Name="MuscleTone_0" Content="Хромота (0 баллов)" GroupName="MuscleTone"/>
+
+            <Label FontSize="17" Text="Цвет кожных покровов / оксигенация:"/>
+            <RadioButton x:Name="SkinColor_2" Content="Розовый (2 балла)" GroupName="SkinColor"/>
+            <RadioButton x:Name="SkinColor_1" Content="Синюшные конечности (1 балл)" GroupName="SkinColor"/>
+            <RadioButton x:Name="SkinColor_0" Content="Генерализованный цианоз (0 баллов)" GroupName="SkinColor"/>
+
+            <Label FontSize="17" Text="Рефлекторный ответ на раздражающие стимулы:"/>
+            <RadioButton x:Name="ReflexResponse_2" Content="Крик (2 балла)" GroupName="ReflexResponse"/>
+            <RadioButton x:Name="ReflexResponse_1" Content="Стон (1 балл)" GroupName="ReflexResponse"/>
+            <RadioButton x:Name="ReflexResponse_0" Content="Молчание (0 баллов)" GroupName="ReflexResponse"/>
+
+            <Button Text="Рассчитать"
+                    Clicked="OnCalculateButtonClicked"
+                    Style="{StaticResource ButtonCalcStyle}"/>
+
+            <Label x:Name="ResultLabel" 
+                   Style="{StaticResource LabelCalcResult}"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

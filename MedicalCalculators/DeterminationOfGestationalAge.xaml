@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PediatricaUI.MedicalCalculators.DeterminationOfGestationalAge"
+             Title="Определение срока беременности по последней менструации и ультразвуковой биометрии">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="LabelCalcHeader" TargetType="Label">
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="0,0,0,20"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+            <Style x:Key="EntryCalcStyle" TargetType="Entry">
+                <Setter Property="Margin" Value="0,0,0,20"/>
+                <Setter Property="Keyboard" Value="Numeric"/>
+            </Style>
+            <Style x:Key="ButtonCalcStyle" TargetType="Button">
+                <Setter Property="Margin" Value="0,20,0,40"/>
+            </Style>
+            <Style x:Key="LabelCalcResult" TargetType="Label">
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="Margin" Value="0,20,0,0"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Label Text="Калькулятор срока беременности" 
+                   Style="{StaticResource LabelCalcHeader}"/>
+
+            <Label Text="Примечания:" 
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   Margin="0,20,0,10"/>
+
+            <Label FontSize="17" Margin="0,0,0,7" Text="Данный калькулятор предоставляет много вариантов оценки беременности и даты родов. Введите любые или все параметры, чтобы сравнить различные варианты расчетов даты. Текущая дата установлена согласно дате в вашей локальной рабочей станции."/>
+            <Label FontSize="17" Margin="0,0,0,7" Text="Дата родов по менструации рассчитывается путем добавления 280 дней (40 недель) к первому дню последнего менструального цикла."/>
+            <Label FontSize="17" Margin="0,0,0,7" Text="Беременность по менструации рассчитывается от первого дня последней менструации."/>
+            <Label FontSize="17" Margin="0,0,0,7" Text="Беременность по КТР рассчитывается следующим образом: Недели = 5.2876 + (0.1584 * КТР) - (0.0007 * КТР²). Это значение является сроком беременности на момент УЗИ."/>
+            <Label FontSize="17" Margin="0,0,0,7" Text="Беременность по БПР рассчитывается по формуле: Дни = 2 * БПР + 44.2. Это значение является сроком беременности на момент УЗИ."/>
+            <Label FontSize="17" Margin="0,0,0,7" Text="Беременность по ОГ рассчитывается следующим образом: Недели = e^(1.854 + (0.010451 * ОГ) - (0.000029919 * ОГ²) + 0.000000043156 * ОГ³). Это значение является сроком беременности на момент УЗИ."/>
+            <Label FontSize="17" Margin="0,0,0,7" Text="Примечание: Даты по КТР подходят для первого триместра беременности, даты по БПР и ОГ лучше всего применять для второго триместра."/>
+
+            <Label Text="Текущая дата:" FontSize="17"/>
+            <DatePicker x:Name="CurrentDatePicker"
+                        Format="dd/MM/yyyy"
+                        MinimumDate="01/01/1900"
+                        MaximumDate="12/31/2100"
+                        HorizontalOptions="FillAndExpand"
+                        Margin="0,0,0,20"/>
+
+            <Label Text="Последняя менструация:" FontSize="17"/>
+            <DatePicker x:Name="LMPDatePicker"
+                        Format="dd/MM/yyyy"
+                        MinimumDate="01/01/1900"
+                        MaximumDate="12/31/2100"
+                        HorizontalOptions="FillAndExpand"
+                        Margin="0,0,0,20"/>
+
+            <Label Text="Дата УЗИ:" FontSize="17"/>
+            <DatePicker x:Name="UltrasoundDatePicker"
+                        Format="dd/MM/yyyy"
+                        MinimumDate="01/01/1900"
+                        MaximumDate="12/31/2100"
+                        HorizontalOptions="FillAndExpand"
+                        Margin="0,0,0,20"/>
+
+            <Label Text="Копчиково-теменной размер (мм):" FontSize="17"/>
+            <Entry x:Name="CRLMeasurement"
+                   Placeholder="Копчиково-теменной размер (мм)"
+                   Style="{StaticResource EntryCalcStyle}"/>
+
+            <Label Text="Бипариетальный размер головки плода (мм):" FontSize="17"/>
+            <Entry x:Name="BPDMeasurement"
+                   Placeholder="Бипариетальный размер головки плода (мм)"
+                   Style="{StaticResource EntryCalcStyle}"/>
+
+            <Label Text="Окружность головы (мм):" FontSize="17"/>
+            <Entry x:Name="HCMeasurement"
+                   Placeholder="Окружность головы (мм)"
+                   Style="{StaticResource EntryCalcStyle}"/>
+
+            <Button Text="Рассчитать"
+                    Clicked="OnCalculateButtonClicked"
+                    Style="{StaticResource ButtonCalcStyle}"/>
+
+            <Label x:Name="ResultLabel1" 
+                   Style="{StaticResource LabelCalcResult}"/>
+            <Label x:Name="ResultLabel2" 
+                   Style="{StaticResource LabelCalcResult}"/>
+            <Label x:Name="ResultLabel3" 
+                   Style="{StaticResource LabelCalcResult}"/>
+            <Label x:Name="ResultLabel4" 
+                   Style="{StaticResource LabelCalcResult}"/>
+            <Label x:Name="ResultLabel5" 
+                   Style="{StaticResource LabelCalcResult}"/>
+            <Label x:Name="ResultLabel6" 
+                   Style="{StaticResource LabelCalcResult}"/>
+            <Label x:Name="ResultLabel7" 
+                   Style="{StaticResource LabelCalcResult}"/>
+            <Label x:Name="ResultLabel8" 
+                   Style="{StaticResource LabelCalcResult}"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

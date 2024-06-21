@@ -25,4 +25,20 @@ public partial class MedicalCalculatorsPage : ContentPage
     {
         await Navigation.PushAsync(new TransferrinSaturation());
     }
+    private async void TapGestureRecognizer_Tapped5(object sender, TappedEventArgs e)
+    {
+        await Navigation.PushAsync(new DeterminationOfGestationalAge());
+    }
+    private async void TapGestureRecognizer_Tapped6(object sender, TappedEventArgs e)
+    {
+        await Navigation.PushAsync(new BodySurfaceArea());
+    }
+    private async void TapGestureRecognizer_Tapped7(object sender, TappedEventArgs e)
+    {
+        await Navigation.PushAsync(new CalculationOfInfusionTherapy());
+    }
+    private async void TapGestureRecognizer_Tapped8(object sender, TappedEventArgs e)
+    {
+        await Navigation.PushAsync(new ApgarScale());
+    }
 }

@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PediatricaUI.Views.MedicalCalculatorsPage"
-             Title="MedicalCalculatorsPage">
+             Title="Медицинские калькуляторы">
 
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -52,6 +52,42 @@
 
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped4"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
+            <Border>
+                <Label Style="{StaticResource LinkToSingleCalculatorStyle}">
+                    Определение срока беременности по последней менструации и ультразвуковой биометрии
+
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped5"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
+            <Border>
+                <Label Style="{StaticResource LinkToSingleCalculatorStyle}">
+                    Площадь поверхности тела (метод Дюбуа)
+
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped6"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
+            <Border>
+                <Label Style="{StaticResource LinkToSingleCalculatorStyle}">
+                    Расчет инфузионной терапии для детей
+
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped7"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
+            <Border>
+                <Label Style="{StaticResource LinkToSingleCalculatorStyle}">
+                    Шкала Апгар
+
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped8"/>
                     </Label.GestureRecognizers>
                 </Label>
             </Border>
