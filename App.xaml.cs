@@ -5,13 +5,11 @@ namespace PediatricaUI
 {
     public partial class App : Application
     {
-        private ArticleDbContext _db;
-        public App(ArticleDbContext db)
+        public App()
         {
-            _db = db;
             InitializeComponent();
             /*MainPage = new AppShell();*/
-            MainPage = new NavigationPage(new MainPage(_db))
+            MainPage = new NavigationPage(new MainPage())
             {
                 BarBackgroundColor = Color.FromArgb("#1D03BE"),
                 BarTextColor = Colors.White

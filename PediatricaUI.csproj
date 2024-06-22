@@ -80,6 +80,48 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="ArticlePages\MedicalSupervisionOfHealthyChild\MedicalSupervisionOfHealthyChild.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ArticlePages\MedicalSupervisionOfHealthyChild\ScreeningTests.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ArticlePages\MedicalSupervisionOfHealthyChild\ToiletTraining.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ArticlePages\SymptomsInInfantsAndYoungChildren\Colic.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ArticlePages\SymptomsInInfantsAndYoungChildren\Constipation.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ArticlePages\SymptomsInInfantsAndYoungChildren\Cough.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ArticlePages\SymptomsInInfantsAndYoungChildren\Cry.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ArticlePages\SymptomsInInfantsAndYoungChildren\Diarrhea.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ArticlePages\SymptomsInInfantsAndYoungChildren\Fever.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ArticlePages\SymptomsInInfantsAndYoungChildren\Nausea.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ArticlePages\SymptomsInInfantsAndYoungChildren\Rash.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ArticlePages\SymptomsInInfantsAndYoungChildren\SeparationAnxiety.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ArticlePages\Vaccination\Vaccination.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ArticlePages\Vaccination\VaccineHesitancy.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="ImagePages\Angiofibroma.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

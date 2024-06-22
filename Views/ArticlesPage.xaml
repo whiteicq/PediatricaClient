@@ -36,6 +36,7 @@
                     <Border Stroke="{StaticResource BorderColorExpanderHeader}">
                         <Label Style="{StaticResource ExpanderHeaderStyle}">
                             Симтомы у детей грудного и младшего возраста
+                            
                         </Label>
                     </Border>
                 </toolkit:Expander.Header>
@@ -45,7 +46,7 @@
                             Колика
 
                             <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped1"/>
                             </Label.GestureRecognizers>
                         </Label>
                     </Border>
@@ -54,7 +55,7 @@
                             Запор у детей
                             
                             <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped2"/>
                             </Label.GestureRecognizers>
                         </Label>
                     </Border>
@@ -63,7 +64,7 @@
                             Кашель у детей
 
                             <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped3"/>
                             </Label.GestureRecognizers>
                         </Label>
                     </Border>
@@ -72,7 +73,7 @@
                             Плач
 
                             <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped4"/>
                             </Label.GestureRecognizers>
                         </Label>
                     </Border>
@@ -81,7 +82,7 @@
                             Диарея у детей
 
                             <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped5"/>
                             </Label.GestureRecognizers>
                         </Label>
                     </Border>
@@ -90,7 +91,7 @@
                             Лихорадка у детей грудного и младшего возраста
 
                             <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped6"/>
                             </Label.GestureRecognizers>
                         </Label>
                     </Border>
@@ -99,7 +100,7 @@
                             Тошнота и рвота у младенцев и детей
 
                             <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped7"/>
                             </Label.GestureRecognizers>
                         </Label>
                     </Border>
@@ -108,7 +109,7 @@
                             Сыпь у детей грудного и младшего возраста
                             
                             <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped8"/>
                             </Label.GestureRecognizers>
                         </Label>
                     </Border>
@@ -117,7 +118,7 @@
                             Сепарационная тревога и страх незнакомых людей
 
                             <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped9"/>
                             </Label.GestureRecognizers>
                         </Label>
                     </Border>
@@ -130,6 +131,7 @@
                     <Border Stroke="{StaticResource BorderColorExpanderHeader}">
                         <Label Style="{StaticResource ExpanderHeaderStyle}">
                             Медицинское наблюдение за здоровым ребенком
+                            
                         </Label>
                     </Border>
                 </toolkit:Expander.Header>
@@ -139,7 +141,7 @@
                             Медицинское наблюдение за здоровым ребенком
 
                             <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped10"/>
                             </Label.GestureRecognizers>
                         </Label>
                     </Border>
@@ -148,7 +150,7 @@
                             Скрининговые тесты для младенцев, детей и подростков
 
                             <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped11"/>
                             </Label.GestureRecognizers>
                         </Label>
                     </Border>
@@ -157,7 +159,7 @@
                             Приучение к туалету
 
                             <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped12"/>
                             </Label.GestureRecognizers>
                         </Label>
                     </Border>
@@ -179,7 +181,7 @@
                             Вакцинация в детском возрасте
 
                             <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped13"/>
                             </Label.GestureRecognizers>
                         </Label>
                     </Border>
@@ -188,7 +190,7 @@
                             Недоверие к вакцинам
 
                             <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped14"/>
                             </Label.GestureRecognizers>
                         </Label>
                     </Border>

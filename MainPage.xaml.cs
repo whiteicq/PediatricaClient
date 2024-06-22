@@ -5,16 +5,14 @@ namespace PediatricaUI
 {
     public partial class MainPage : ContentPage
     {
-        private ArticleDbContext _db;
-        public MainPage(ArticleDbContext db)
+        public MainPage()
         {
-            _db = db;
             InitializeComponent();
         }
 
         private async void ToArticlePage(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ArticlesPage(_db));
+            await Navigation.PushAsync(new ArticlesPage());
         }
 
         private async void ToImagesPage(object sender, EventArgs e)
