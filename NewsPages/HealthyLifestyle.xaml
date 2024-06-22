@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PediatricaUI.NewsPages.HealthyLifestyle"
+             Title="Здоровый образ жизни может помочь в преодолении генетической предрасположенности к преждевременной смерти
+">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="LabelNewsHeader" TargetType="Label">
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="10,10,0,20"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+            <Style x:Key="LabelNewsRegular" TargetType="Label">
+                <Setter Property="Margin" Value="15"/>
+                <Setter Property="FontSize" Value="19"/>
+            </Style>
+            <Style x:Key="LabelNewsSecond" TargetType="Label">
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="Margin" Value="10"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label Style="{StaticResource LabelNewsHeader}" Text="Здоровый образ жизни может помочь в преодолении генетической предрасположенности к преждевременной смерти"/>
+            <Label Style="{StaticResource LabelNewsSecond}" Text="Дата публикации: 01.05.2024"/>
+            <Label Style="{StaticResource LabelNewsSecond}" Text="Источник: Lori Solomon HealthDay News"/>
+            <Label Style="{StaticResource LabelNewsRegular}">
+                Согласно данным исследования, опубликованным онлайн 29 апреля в журнале BMJ Evidence Based Medicine, приверженность здоровому образу жизни может в значительной степени преодолеть генетический риск короткой продолжительности жизни.
+
+Зилонг Биан из медицинского факультета университета Чжэцзян в Ханчжоу, Китай, с коллегами изучили связь генетических факторов и образа жизни с продолжительностью жизни с использованием данных 353 742 взрослых участников из биобанка Великобритании. Участники были классифицированы по категориям продолжительности жизни, оценке полигенетического риска и оценке образа жизни.
+
+Исследователи обнаружили, что риск смерти у лиц с генетической предрасположенностью к короткой продолжительности жизни был выше, чем у лиц с генетической предрасположенностью к большой продолжительности жизни (отношение рисков 1,21). Категория нездорового образца жизни также была связана с более высоким риском смерти (отношение рисков 1,78), чем категория здорового образа жизни. Сочетание генетической предрасположенности к короткой продолжительности жизни и нездорового образа жизни повышало уровень смертности в 2,04 раза по сравнению с лицами с генетической предрасположенностью к большой продолжительности жизни и здоровым образом жизни. Комбинированные факторы образа жизни, такие как отсутствие курения в течение всей жизни, регулярная физическая активность, достаточная продолжительность сна и здоровое питание снижали риск смерти в возрасте до 75 лет.
+
+«Политика общественного здравоохранения в отношении пропаганды здорового образа жизни служит мощным дополнением к традиционной медицинской помощи и помогает ослабить влияние генетических факторов на продолжительность жизни человека», — пишут авторы.
+
+Один автор сообщил о финансовых связях с компанией BioAge Labs.
+
+            </Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

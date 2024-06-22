@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PediatricaUI.NewsPages.OverallRiskOfDeath"
+             Title="Общий риск смерти при предменструальных расстройствах не повышается">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="LabelNewsHeader" TargetType="Label">
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="10,10,0,20"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+            <Style x:Key="LabelNewsRegular" TargetType="Label">
+                <Setter Property="Margin" Value="15"/>
+                <Setter Property="FontSize" Value="19"/>
+            </Style>
+            <Style x:Key="LabelNewsSecond" TargetType="Label">
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="Margin" Value="10"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label Style="{StaticResource LabelNewsHeader}" Text="Общий риск смерти при предменструальных расстройствах не повышается"/>
+            <Label Style="{StaticResource LabelNewsSecond}" Text="Дата публикации: 29.05.2024"/>
+            <Label Style="{StaticResource LabelNewsSecond}" Text="Источник: Elana Gotkine HealthDay Reporter"/>
+            <Label Style="{StaticResource LabelNewsRegular}">
+                Согласно данным исследования, опубликованным онлайн 28 мая в журнале JAMA Network Open, у женщин с предменструальными расстройствами (ПМР) в целом не повышен риск ранней смерти, однако повышены риск суицида и риски для женщин с диагнозом в возрасте до 25 лет.
+
+Марион Опатовски, канд. наук из Института экологической медицины Каролинского института в Стокгольме, с коллегами изучили связь между ПМР и общей смертностью и смертностью, вызванной конкретной причиной, в общенациональном популяционном сопоставимом когортном исследовании. Среди участниц были женщины репродуктивного возраста с впервые диагностированным ПМР в период с 1 января 2001 г. по 31 декабря 2018 г.; для 67 748 женщин с клинически диагностированным ПМР была подобрана сопоставимая контрольная группа из 338 740 женщин без этого расстройства.
+
+Исследователи обнаружили, что за период последующего наблюдения, продолжавшегося в среднем 6,2 года, среди женщин с ПМР было зарегистрировано 367 летальных исходов, а среди женщин без ПМР — 1958 летальных исходов (частота 8,4 и 9,1 летальных исходов на 10 000 человеко-лет, соответственно). У женщин с ПМР был повышен риск смерти по неестественным причинам, особенно риск суицида, по сравнению с женщинами, у которых расстройство отсутствовало (отношение рисков 1,59 и 1,92, соответственно), однако общий риск смерти не был повышен. Более высокая смертность по любой причине и смертность как от суицида, так и от естественных причин наблюдалась у женщин, которым диагноз был поставлен в возрасте до 25 лет (отношение рисков 2,51, 3,84 и 2,59, соответственно).
+
+«Это подтверждает важность тщательного последующего наблюдения за молодыми женщинами с ПМР и подчеркивает необходимость разработки стратегий профилактики суицида для всех женщин с ПМР», — пишут авторы.
+
+
+            </Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

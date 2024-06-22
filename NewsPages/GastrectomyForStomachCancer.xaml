@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PediatricaUI.NewsPages.GastrectomyForStomachCancer"
+             Title="Гастрэктомия при раке желудка связана с более низким риском сердечно-сосудистых явлений">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="LabelNewsHeader" TargetType="Label">
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="10,10,0,20"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+            <Style x:Key="LabelNewsRegular" TargetType="Label">
+                <Setter Property="Margin" Value="15"/>
+                <Setter Property="FontSize" Value="19"/>
+            </Style>
+            <Style x:Key="LabelNewsSecond" TargetType="Label">
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="Margin" Value="10"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label Style="{StaticResource LabelNewsHeader}" Text="Гастрэктомия при раке желудка связана с более низким риском сердечно-сосудистых явлений"/>
+            <Label Style="{StaticResource LabelNewsSecond}" Text="Дата публикации: 04.06.2024"/>
+            <Label Style="{StaticResource LabelNewsSecond}" Text="Источник: Lori Solomon HealthDay Reporter"/>
+            <Label Style="{StaticResource LabelNewsRegular}">
+                Согласно данным исследования, опубликованным онлайн 28 марта в «Международном журнале хирургии» (International Journal of Surgery), у пациентов с раком желудка, перенесших гастрэктомию, риск сердечно-сосудистых явлений ниже, чем в общей популяции.
+
+Д-р Йонкеун Квон из Медицинского колледжа Корейского университета в Сеуле с коллегами использовали данные пациентов с раком желудка, перенесших гастрэктомию (37 698 участников), пациентов с раком желудка, перенесших эндоскопическую резекцию (2773 участника), и соответствующей контрольной популяции (161 887 участников) для изучения различий в частоте сердечно-сосудистых явлений.
+
+Исследователи обнаружили, что среди пациентов, перенесших гастрэктомию по поводу рака желудка, у 2,9 % (4,69 на 1000 человеко-лет) развились новые серьезные нежелательные сердечно-сосудистые явления (MACE) в течение семи лет последующего наблюдения. В группе гастрэктомии наблюдалось значимое снижение риска MACE по сравнению с контрольной популяцией (отношение рисков 0,65). Среди пациентов, перенесших эндоскопическую резекцию по поводу рака желудка, у 5,4 % (8,21 на 1000 человеко-лет) развились новые явления MACE в период последующего наблюдения, а риск MACE в группе эндоскопической резекции существенно не отличался от такового в контрольной популяции.
+
+«Наши результаты, помимо их важности в сфере общественного здравоохранения для контроля сердечно-сосудистого риска у пациентов с раком желудка, помогут пациентам и медицинским работникам принимать более обоснованные решения относительно хирургического вмешательства по поводу рака желудка», — пишут авторы.
+
+            </Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

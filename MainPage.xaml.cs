@@ -31,6 +31,11 @@ namespace PediatricaUI
         {
             await Navigation.PushAsync(new MedicalCalculatorsPage());
         }
+
+        private async void ToNewsPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new NewsPage());
+        }
     }
 
 }

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PediatricaUI.NewsPages.ShortSleepDuration"
+             Title="Короткая продолжительность сна в детском возрасте связана с риском развития психоза в молодом взрослом возрасте">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="LabelNewsHeader" TargetType="Label">
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="10,10,0,20"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+            <Style x:Key="LabelNewsRegular" TargetType="Label">
+                <Setter Property="Margin" Value="15"/>
+                <Setter Property="FontSize" Value="19"/>
+            </Style>
+            <Style x:Key="LabelNewsSecond" TargetType="Label">
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="Margin" Value="10"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label Style="{StaticResource LabelNewsHeader}" Text="Короткая продолжительность сна в детском возрасте связана с риском развития психоза в молодом взрослом возрасте"/>
+            <Label Style="{StaticResource LabelNewsSecond}" Text="Дата публикации: 29.05.2024"/>
+            <Label Style="{StaticResource LabelNewsSecond}" Text="Источник: Lori Solomon HealthDay Reporter"/>
+            <Label Style="{StaticResource LabelNewsRegular}">
+                Согласно данным исследования, опубликованным онлайн 8 мая в журнале JAMA Psychiatry, устойчивое сокращение продолжительности сна в детском возрасте может быть фактором риска последующего развития психоза в молодом взрослом возрасте.
+
+Изабель Моралес-Муньоз, канд. наук из Бирмингемского университета в Великобритании, с коллегами изучили связь устойчивого сокращения продолжительности сна в детском возрасте (6, 18 и 30 месяцев и 3,5, 4–5, 5–6 и 6–7 лет) с психозом в молодом взрослом возрасте (в возрасте 24 лет). Анализ включал данные 12 394 детей и 3962 молодых взрослых людей.
+
+Исследователи обнаружили, что у лиц с устойчивым сокращением продолжительности ночного сна в детском возрасте вероятность развития психотического расстройства (ПР; отношение шансов 2,50) и психотического опыта (ПО; отношение шансов 3,64) в возрасте 24 лет была выше. Повышенные уровни интерлейкина-6 в возрасте 9 лет частично опосредовали взаимосвязь между устойчиво более короткой продолжительностью сна и ПР (скорректированная на погрешность оценка = 0,003) и ПО (скорректированная на погрешность оценка = 0,002) в молодом взрослом возрасте, однако такая взаимосвязь не наблюдалась для С-реактивного белка в возрасте 9 или 15 лет.
+
+«Наши результаты указывают на то, что, несмотря на значимость, размер и доля опосредованной связи были низкими, что указывает на то, что эта взаимосвязь также потенциально объясняется другими факторами», — пишут авторы. «В будущих исследованиях необходимо дополнительно изучить специфическую роль воспаления как потенциального опосредующего фактора в проспективной связи между сном и психозом, наряду с другими потенциально значимыми опосредующими факторами».
+
+
+            </Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

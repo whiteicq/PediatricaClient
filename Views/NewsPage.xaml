@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PediatricaUI.Views.NewsPage"
+             Title="Новости">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="LinkToSingleNewsStyle" TargetType="Label">
+                <Setter Property="MinimumHeightRequest" Value="51"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="BackgroundColor" Value="#ffffff"/>
+                <Setter Property="TextColor" Value="#8F8282"/>
+                <Setter Property="TextColor" Value="#8F8282"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Border>
+                <Label Style="{StaticResource LinkToSingleNewsStyle}">
+                    У многих пациентов после прекращения приема антидепрессантов возникают симптомы отмены
+
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
+            <Border>
+                <Label Style="{StaticResource LinkToSingleNewsStyle}">
+                    Гастрэктомия при раке желудка связана с более низким риском сердечно-сосудистых явлений
+
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped2"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
+            <Border>
+                <Label Style="{StaticResource LinkToSingleNewsStyle}">
+                    Общий риск смерти при предменструальных расстройствах не повышается
+                    
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped3"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
+            <Border>
+                <Label Style="{StaticResource LinkToSingleNewsStyle}">
+                    Короткая продолжительность сна в детском возрасте связана с риском развития психоза в молодом взрослом возрасте
+                    
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped4"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
+            <Border>
+                <Label Style="{StaticResource LinkToSingleNewsStyle}">
+                    Ожидаемая продолжительность жизни и бремя заболеваний в мире продолжают улучшаться
+                    
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped5"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
+            <Border>
+                <Label Style="{StaticResource LinkToSingleNewsStyle}">
+                    Нейропсихиатрические симптомы могут присутствовать на любой стадии волчанки
+                    
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped6"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
+            <Border>
+                <Label Style="{StaticResource LinkToSingleNewsStyle}">
+                    У женщин с ожирением риск развития рака молочной железы снижается после бариатрической хирургической операции
+                    
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped7"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
+            <Border>
+                <Label Style="{StaticResource LinkToSingleNewsStyle}">
+                    Добавление сердечно-сосудистых биомаркеров к известным факторам риска улучшает прогнозируемость риска
+                    
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped8"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
+            <Border>
+                <Label Style="{StaticResource LinkToSingleNewsStyle}">
+                    Тромбэктомия связана с улучшенными исходами острого инсульта и обширного инфаркта
+                    
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped9"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
+            <Border>
+                <Label Style="{StaticResource LinkToSingleNewsStyle}">
+                    Допплеровское ультразвуковое исследование целесообразно для диагностики первой линии гигантоклеточного артериита
+                    
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped10"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
+            <Border>
+                <Label Style="{StaticResource LinkToSingleNewsStyle}">
+                    Здоровый образ жизни может помочь в преодолении генетической предрасположенности к преждевременной смерти
+
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped11"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
+            <Border>
+                <Label Style="{StaticResource LinkToSingleNewsStyle}">
+                    Физическая активность с весовой нагрузкой повышает частоту возникновения остеоартрита коленного сустава у людей с низкой массой мышц нижних конечностей
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped12"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
+            <Border>
+                <Label Style="{StaticResource LinkToSingleNewsStyle}">
+                    Пренатальное воздействие опиоидов не связано с психоневрологическими расстройствами у потомства
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped13"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
