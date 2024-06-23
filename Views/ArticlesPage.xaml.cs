@@ -1,6 +1,10 @@
 using PediatricaUI.ArticlePages.SymptomsInInfantsAndYoungChildren;
 using PediatricaUI.ArticlePages.MedicalSupervisionOfHealthyChild;
 using PediatricaUI.ArticlePages.Vaccination;
+using PediatricaUI.ArticlePages.BehavioralDisordersAndProblemsInChildren;
+using PediatricaUI.ArticlePages.CourseOnCaringForSickChildrenAndTheirFamilies;
+using PediatricaUI.ArticlePages.ChildAbuse;
+using PediatricaUI.ArticlePages.CongenitalDisordersOfTubularTransport;
 
 namespace PediatricaUI.Views;
 
@@ -65,8 +69,69 @@ public partial class ArticlesPage : ContentPage
     private async void TapGestureRecognizer_Tapped13(object sender, TappedEventArgs e)
     {
         await Navigation.PushAsync(new Vaccination());
-    }private async void TapGestureRecognizer_Tapped14(object sender, TappedEventArgs e)
+    }
+    private async void TapGestureRecognizer_Tapped14(object sender, TappedEventArgs e)
     {
         await Navigation.PushAsync(new VaccineHesitancy());
+    }
+    private async void TapGestureRecognizer_Tapped15(object sender, TappedEventArgs e)
+    {
+        await Navigation.PushAsync(new OverviewOfBehavioralDisordersInChildren());
+    }
+    private async void TapGestureRecognizer_Tapped16(object sender, TappedEventArgs e)
+    {
+        await Navigation.PushAsync(new BreathHoldingSpells());
+    }
+    private async void TapGestureRecognizer_Tapped17(object sender, TappedEventArgs e)
+    {
+        await Navigation.PushAsync(new EatingDisorders());
+    }
+    private async void TapGestureRecognizer_Tapped18(object sender, TappedEventArgs e)
+    {
+        await Navigation.PushAsync(new SchoolAvoidance());
+    }
+    private async void TapGestureRecognizer_Tapped19(object sender, TappedEventArgs e)
+    {
+        await Navigation.PushAsync(new SleepDisorders());
+    }
+    private async void TapGestureRecognizer_Tapped20(object sender, TappedEventArgs e)
+    {
+        await Navigation.PushAsync(new Tantrums());
+    }
+    private async void TapGestureRecognizer_Tapped21(object sender, TappedEventArgs e)
+    {
+        await Navigation.PushAsync(new Violence());
+    }
+    private async void TapGestureRecognizer_Tapped22(object sender, TappedEventArgs e)
+    {
+        await Navigation.PushAsync(new CaringForSickNewborns());
+    }
+    private async void TapGestureRecognizer_Tapped23(object sender, TappedEventArgs e)
+    {
+        await Navigation.PushAsync(new ChildrenWithChronicDiseases());
+    }
+    private async void TapGestureRecognizer_Tapped24(object sender, TappedEventArgs e)
+    {
+        await Navigation.PushAsync(new DeathAndDyingOfChildren());
+    }
+    private async void TapGestureRecognizer_Tapped25(object sender, TappedEventArgs e)
+    {
+        await Navigation.PushAsync(new OverviewOfChildMaltreatment());
+    }
+    private async void TapGestureRecognizer_Tapped26(object sender, TappedEventArgs e)
+    {
+        await Navigation.PushAsync(new DamageToFemaleGenitalOrgans());
+    }
+    private async void TapGestureRecognizer_Tapped27(object sender, TappedEventArgs e)
+    {
+        await Navigation.PushAsync(new BartterSyndromeAndGitelmanSyndrome());
+    }
+    private async void TapGestureRecognizer_Tapped28(object sender, TappedEventArgs e)
+    {
+        await Navigation.PushAsync(new Cystinuria());
+    }
+    private async void TapGestureRecognizer_Tapped29(object sender, TappedEventArgs e)
+    {
+        await Navigation.PushAsync(new HypophosphatemicRickets());
     }
 }

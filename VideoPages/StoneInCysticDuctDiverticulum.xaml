@@ -4,7 +4,9 @@
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="PediatricaUI.VideoPages.StoneInCysticDuctDiverticulum"
              Title="Камень в дивертикуле пузырного протока у 7-летнего мальчика">
-
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="starForFavourites" Text="Добавить в избранное" Clicked="ToolbarItem_Clicked" IconImageSource="star_before.png"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style x:Key="SingleVideoStyle" TargetType="toolkit:MediaElement">

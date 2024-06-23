@@ -4,6 +4,10 @@
              x:Class="PediatricaUI.NewsPages.AddingCardiovascularBiomarkers"
              Title="Добавление сердечно-сосудистых биомаркеров к известным факторам риска улучшает прогнозируемость риска">
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="starForFavourites" Text="Добавить в избранное" Clicked="ToolbarItem_Clicked" IconImageSource="star_before.png"/>
+    </ContentPage.ToolbarItems>
+    
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style x:Key="LabelNewsHeader" TargetType="Label">

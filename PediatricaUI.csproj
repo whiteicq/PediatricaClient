@@ -80,6 +80,51 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="ArticlePages\BehavioralDisordersAndProblemsInChildren\BreathHoldingSpells.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ArticlePages\BehavioralDisordersAndProblemsInChildren\EatingDisorders.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ArticlePages\BehavioralDisordersAndProblemsInChildren\OverviewOfBehavioralDisordersInChildren.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ArticlePages\BehavioralDisordersAndProblemsInChildren\SchoolAvoidance.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ArticlePages\BehavioralDisordersAndProblemsInChildren\SleepDisorders.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ArticlePages\BehavioralDisordersAndProblemsInChildren\Tantrums.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ArticlePages\BehavioralDisordersAndProblemsInChildren\Violence.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ArticlePages\ChildAbuse\DamageToFemaleGenitalOrgans.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ArticlePages\ChildAbuse\OverviewOfChildMaltreatment.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ArticlePages\CongenitalDisordersOfTubularTransport\BartterSyndromeAndGitelmanSyndrome.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ArticlePages\CongenitalDisordersOfTubularTransport\Cystinuria.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ArticlePages\CongenitalDisordersOfTubularTransport\HypophosphatemicRickets.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ArticlePages\CourseOnCaringForSickChildrenAndTheirFamilies\CaringForSickNewborns.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ArticlePages\CourseOnCaringForSickChildrenAndTheirFamilies\ChildrenWithChronicDiseases.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ArticlePages\CourseOnCaringForSickChildrenAndTheirFamilies\DeathAndDyingOfChildren.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="ArticlePages\MedicalSupervisionOfHealthyChild\MedicalSupervisionOfHealthyChild.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -195,9 +240,6 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MedicalCalculators\TransferrinSaturation.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="MedicalCalculators\WHOpercentiles.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="NewsPages\AddingCardiovascularBiomarkers.xaml">
@@ -317,6 +359,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="ArticlePages\CourseOnCaringForSickChildrenAndTheirFamilies\ChildrenWithChronicDiseases.xaml.cs">
+	    <DependentUpon>ChildrenWithChronicDiseases.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="ImagePages\Anoftalmia.xaml.cs">
 	    <DependentUpon>Anoftalmia.xaml</DependentUpon>
 	  </Compile>

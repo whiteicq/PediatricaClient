@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PediatricaUI.MedicalCalculators.QTIntervalCorrection"
              Title="Коррекция интервала QT (ЭКГ)">
-
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="starForFavourites" Text="Добавить в избранное" Clicked="ToolbarItem_Clicked" IconImageSource="star_before.png"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style x:Key="LabelCalcHeader" TargetType="Label">

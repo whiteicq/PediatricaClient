@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PediatricaUI.ArticlePages.BehavioralDisordersAndProblemsInChildren.Tantrums"
+             Title="Истерики">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="starForFavourites" Text="Добавить в избранное" Clicked="ToolbarItem_Clicked" IconImageSource="star_before.png"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="LabelArticleHeader" TargetType="Label">
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="10,10,0,20"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+            <Style x:Key="LabelArticleRegular" TargetType="Label">
+                <Setter Property="Margin" Value="15"/>
+                <Setter Property="FontSize" Value="19"/>
+            </Style>
+            <Style x:Key="LabelArticleSecond" TargetType="Label">
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="Margin" Value="10"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label Style="{StaticResource LabelArticleHeader}" Text="Истерики"/>
+            <Label Style="{StaticResource LabelArticleRegular}">
+                Истерика является сильным эмоциональным всплеском, как правило, в ответ на разочарование.
+
+(См. также Обзор поведенческих расстройств у детей (Overview of Behavioral Problems in Children)).
+
+Истерики обычно появляются к концу первого года, становятся наиболее распространенными в возрасте от 2 (кризис 2 лет) до 4 лет и нечасты после 5 лет. Если истерики все же продолжаются и после 5 лет, они могут сохраняться на протяжении всего детства.
+
+Причины перепадов настроения включают разочарование, усталость и голод. Дети также могут впасть в истерику, если хотят привлечь внимание, получить что-то или не делать чего-либо. Родители часто винят себя (из-за воображаемого плохого воспитания), в то время как фактическая причина часто представлена сочетанием личности ребенка, непосредственных обстоятельств и нормального возрастного поведения. Скрытые психические, физические или социальные проблемы редко бывают причиной, разве только в случаях, когда истерики длятся >15 минут или происходят несколько раз в день.
+
+Истерики могут включать:
+
+Крик;
+
+визг;
+
+Плач
+
+метания;
+
+катания по полу;
+
+топанье;
+
+Бросание вещей
+
+Лицо у ребенка может стать красным, он может толкаться или пинаться. Некоторые дети могут задерживать дыхание на несколько секунд, а затем возобновлять его (в отличие от приступов задержки дыхания, которые также могут следовать за приступами плача, вызванного разочарованием).
+
+Хотя предоставление детей самим себе (например, "тайм-аут") часто является эффективным, многие дети испытывают трудности с самостоятельным прекращением истерики. В большинстве случаев обращение к источнику истерики только продлевает ее. Поэтому желательно перенацелить внимание ребенка путем вовлечения его в альтернативную деятельность, на которой он может сфокусироваться. Для ребенка может быть полезно физическое удаление из сложившейся ситуации.
+            </Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

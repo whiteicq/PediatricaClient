@@ -15,6 +15,9 @@
         </ResourceDictionary>
             
     </ContentPage.Resources>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="starForFavourites" Text="Добавить в избранное" Clicked="ToolbarItem_Clicked" IconImageSource="star_before.png"/>
+    </ContentPage.ToolbarItems>
     <ScrollView>
         <VerticalStackLayout>
             <Image Source="ear_implant.png" Style="{StaticResource SingleImageStyle}"/>
